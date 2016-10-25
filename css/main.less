@@ -99,6 +99,8 @@ header{
   position: absolute;
   top:0;
   left:0;
+  width: 107px;
+  height: 107px;
 }
 .logo-top p{
   position: absolute;
@@ -579,13 +581,143 @@ h3.h3-title::before{
     }
   }
 }
-.affix-top{
+#myScrollspy .affix-top{
   position: absolute;
   top:1500px;
   left:50px;
 }
-.affix{
+#myScrollspy .affix{
   position: fixed;
   top:200px;
   left:50px;
+}
+.ticket-menu{
+  margin:10px auto;
+}
+.ticket-menu-left{
+  width: 185px;
+  ul{
+    list-style: none;
+    width: 170px;
+    border: 1px solid #ccc;
+    li{
+      position: relative;
+      line-height: 66px;
+      font-size: 14px;
+      padding-left:75px;
+      border-bottom: 1px solid #ccc;
+      &:last-of-type{
+        border-bottom: none;
+      }
+      &:hover{
+        background: #eee;
+      }
+      img{
+        position: absolute;
+        left: 10px;
+        top:50%;
+        transform: translate(0,-50%);
+      }
+    }
+  }
+}
+.ticket-menu-right{
+  width: 775px;
+  #ticket-top-carousel{
+    img{
+      width: 100%;
+      height: 334px;
+    }
+    .ticket-top-carousel-indicators{
+      margin:0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0.3);
+      line-height: 35px;
+      width: 100%;
+      text-align: right;
+      padding-right: 50px;
+    }
+  }
+}
+.nav-choose-city{
+  color:white;
+  background: linear-gradient(#f7b76b,#ea5c84);
+  border-radius: 5px;
+  li>a{
+    color:white;
+  }
+  li.active>a, li.active>a:focus, li.active>a:hover{
+    background: orangered;
+  }
+  li:hover>a,li:hover>a:focus,li:hover>a:hover{
+    background: orangered;
+  }
+}
+.choose-city-info{
+  background: #f9f9f9;
+  font-size: 12px;
+  line-height: 25px;
+  color:#aaa;
+  padding-left:2em;
+  span{
+    color:red;
+  }
+  a{
+    color: black;
+  }
+}
+.ticket-left-poster{
+  img{
+    width: 100%;
+  }
+  div{
+    background: #ff7f00;
+    width: 100%;
+    border-top: dashed 2px white;
+    p{
+      margin-bottom: 0;
+      line-height: 30px;
+      color:white;
+      font-size: 18px;
+      padding:0 5px;
+      b{
+        font-size: 20px;
+      }
+      span{
+        float: right;
+      }
+    }
+  }
+}
+.ticket-cover{
+  img{
+    width: 100%;
+  }
+}
+.ticket-cover-info{
+  p{
+    margin-bottom: 0;
+  }
+  .ticket-title{
+    font-size: 16px;
+    color: black;
+  }
+  .ticket-price{
+    color:red;
+    span{
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+  .show-time{
+    span{
+      background: red;
+      float: right;
+    }
+  }
+  .synopsis{
+    font-size: 12px;
+    color:#aaa;
+  }
 }
