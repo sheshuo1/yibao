@@ -13,7 +13,7 @@
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body   data-spy="scroll" data-target="#myScrollspy">
 <header>
     <div class="banner">
         <div class="box">
@@ -54,42 +54,145 @@
 </header>
 <section class="box src-carousel" >
     <div class="container-fluid">
-        <div class="src-name">
-            <span class="member-name">黄依娜jina</span>
-            <span>|</span>
-            <div class="addr-box">
-                <span class="addr">所在地</span><br>
-                <span class="addr">美国</span>
-            </div>
-            <button class="work-order-btn">工作预约</button>
-        </div>
-        <div class="row clearfix member-info-card">
-            <div class="col-xs-6 member-info-txt">
-                <p>
+
+        <div id="src-top-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="src-name">
+                        <span class="member-name">黄依娜jina</span>
+                        <span>|</span>
+                        <div class="addr-box">
+                            <span class="addr">所在地</span><br>
+                            <span class="addr">美国</span>
+                        </div>
+                        <button class="work-order-btn">工作预约</button>
+                    </div>
+                    <div class="row clearfix member-info-card">
+                        <div class="col-xs-6 member-info-txt">
+                            <p>
                     <span>
                         <img src="/images/ico_03.png" width="15" height="15">
                         身份认证
                     </span>
-                    <span>
+                                <span>
                         <b>
                             新锐模特儿
                         </b>
                     </span>
-                    <img src="/images/ico_07.png" alt="ico"/>
-                    <img src="/images/ico_09.png" alt="ico"/>
-                </p>
-                <p>身高/<b>175</b></p>
-                <p>体重/<b>50</b></p>
-                <p>胸围/<b>84</b></p>
-                <p>腰围/<b>63</b></p>
-                <p>臀围/<b>88</b></p>
-                <p>鞋码/<b>39</b></p>
-                <p>头发颜色/<b>黑色</b></p>
-                <p>眼睛颜色/<b>深棕</b></p>
+                                <img src="/images/ico_07.png" alt="ico"/>
+                                <img src="/images/ico_09.png" alt="ico"/>
+                            </p>
+                            <p>身高/<b>175</b></p>
+                            <p>体重/<b>50</b></p>
+                            <p>胸围/<b>84</b></p>
+                            <p>腰围/<b>63</b></p>
+                            <p>臀围/<b>88</b></p>
+                            <p>鞋码/<b>39</b></p>
+                            <p>头发颜色/<b>黑色</b></p>
+                            <p>眼睛颜色/<b>深棕</b></p>
+                        </div>
+                        <div class="col-xs-6 member-info-img">
+                            <img src="/images/memberjpg_03.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="src-name">
+                        <span class="member-name">黄依娜jina</span>
+                        <span>|</span>
+                        <div class="addr-box">
+                            <span class="addr">所在地</span><br>
+                            <span class="addr">美国</span>
+                        </div>
+                        <button class="work-order-btn">工作预约</button>
+                    </div>
+                    <div class="row clearfix member-info-card">
+                        <div class="col-xs-6 member-info-txt">
+                            <p>
+                    <span>
+                        <img src="/images/ico_03.png" width="15" height="15">
+                        身份认证
+                    </span>
+                                <span>
+                        <b>
+                            新锐模特儿
+                        </b>
+                    </span>
+                                <img src="/images/ico_07.png" alt="ico"/>
+                                <img src="/images/ico_09.png" alt="ico"/>
+                            </p>
+                            <p>身高/<b>175</b></p>
+                            <p>体重/<b>50</b></p>
+                            <p>胸围/<b>84</b></p>
+                            <p>腰围/<b>63</b></p>
+                            <p>臀围/<b>88</b></p>
+                            <p>鞋码/<b>39</b></p>
+                            <p>头发颜色/<b>黑色</b></p>
+                            <p>眼睛颜色/<b>深棕</b></p>
+                        </div>
+                        <div class="col-xs-6 member-info-img">
+                            <img src="/images/memberjpg_03.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="src-name">
+                        <span class="member-name">黄依娜jina</span>
+                        <span>|</span>
+                        <div class="addr-box">
+                            <span class="addr">所在地</span><br>
+                            <span class="addr">美国</span>
+                        </div>
+                        <button class="work-order-btn">工作预约</button>
+                    </div>
+                    <div class="row clearfix member-info-card">
+                        <div class="col-xs-6 member-info-txt">
+                            <p>
+                    <span>
+                        <img src="/images/ico_03.png" width="15" height="15">
+                        身份认证
+                    </span>
+                                <span>
+                        <b>
+                            新锐模特儿
+                        </b>
+                    </span>
+                                <img src="/images/ico_07.png" alt="ico"/>
+                                <img src="/images/ico_09.png" alt="ico"/>
+                            </p>
+                            <p>身高/<b>175</b></p>
+                            <p>体重/<b>50</b></p>
+                            <p>胸围/<b>84</b></p>
+                            <p>腰围/<b>63</b></p>
+                            <p>臀围/<b>88</b></p>
+                            <p>鞋码/<b>39</b></p>
+                            <p>头发颜色/<b>黑色</b></p>
+                            <p>眼睛颜色/<b>深棕</b></p>
+                        </div>
+                        <div class="col-xs-6 member-info-img">
+                            <img src="/images/memberjpg_03.jpg" />
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-6 member-info-img">
-                <img src="/images/memberjpg_03.jpg" />
-            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#src-top-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#src-top-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 </section>
@@ -97,45 +200,45 @@
     <div class="row">
         <div class="col-xs-8 src-hot-work-card clearfix">
             <div class="work-card">
-                <img src="images/work-card-img-1.jpg" alt="work-card-img">
-                <div class="work-card-title">11111</div>
+                <img src="images/未标题-50_11.jpg" alt="work-card-img">
+                <div class="work-card-title"></div>
             </div>
             <div class="work-card">
-                <img src="images/work-card-img-2.jpg" alt="work-card-img">
-                <div class="work-card-title">11111</div>
+                <img src="images/未标题-50_13.jpg" alt="work-card-img">
+                <div class="work-card-title"></div>
             </div>
             <div class="work-card">
-                <img src="images/work-card-img-3.jpg" alt="work-card-img">
-                <div class="work-card-title">11111</div>
+                <img src="images/未标题-50_15.jpg" alt="work-card-img">
+                <div class="work-card-title"></div>
             </div>
             <div class="work-card">
-                <img src="images/work-card-img-4.jpg" alt="work-card-img">
-                <div class="work-card-title">11111</div>
+                <img src="images/未标题-50_27.jpg" alt="work-card-img">
+                <div class="work-card-title"></div>
             </div>
             <div class="work-card">
-                <img src="images/work-card-img-5.jpg" alt="work-card-img">
-                <div class="work-card-title">11111</div>
+                <img src="images/未标题-50_29.jpg" alt="work-card-img">
+                <div class="work-card-title"></div>
             </div>
             <div class="work-card">
-                <img src="images/work-card-img-6.jpg" alt="work-card-img">
-                <div class="work-card-title">11111</div>
+                <img src="images/未标题-50_31.jpg" alt="work-card-img">
+                <div class="work-card-title"></div>
             </div>
         </div>
         <div class="col-xs-4 src-hot-work-list">
             <h1><b>推荐工作</b></h1>
             <ol>
                 <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
+                <li><a>【置顶】上海外滩平面拍摄需要女模5名</a></li>
+                <li><a>【置顶】北京平面拍摄需要男外模一名</a></li>
+                <li><a>【置顶】深圳时装平面拍摄需要女模10名</a></li>
+                <li><a>【置顶】广州平面拍摄需要女模3名</a></li>
+                <li><a>【置顶】北京内衣平面拍摄需要女模5名</a></li>
+                <li><a>【置顶】杭州时装平面拍摄需要女外模3名</a></li>
                 <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
-                <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
-                <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
-                <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
-                <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
-                <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
-                <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
-                <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
-                <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
-                <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
-                <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
+                <li><a>【置顶】上海时装平面拍摄需要男模6名</a></li>
+                <li><a>【置顶】南宁内衣平面拍摄需要女模一名</a></li>
+                <li><a>【置顶】苏州内衣平面拍摄需要男模4名</a></li>
+                <li><a>【置顶】广州平面拍摄需要女外模一名</a></li>
 
             </ol>
             <button class="list-more">MORE></button>
@@ -144,10 +247,517 @@
             </button>
         </div>
     </div>
-
+</section>
+<section class="member-block box">
+    <h1 class="member-block-title" id="mote">
+        模特<span class="title-more">更多</span>
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="member-card col-xs-3">
+                <img src="images/img2_cover_10190050.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/img2_cover_10207893.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/img2_src_10142192.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/img2_src_10164066.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="member-block box">
+    <h1 class="member-block-title" id="geshou">
+        歌手<span class="title-more">更多</span>
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="member-card col-xs-3">
+                <img src="images/img2_src_10093314.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/img2_src_10093315.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/img2_src_10141002.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/img2_src_10140967.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="member-block box">
+    <h1 class="member-block-title" id="yueshi">
+        乐师<span class="title-more">更多</span>
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="member-card col-xs-3">
+                <img src="images/W020121206352459047142.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/20120224101837399.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/976999644180708848.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/1480912_115706753104_2.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="member-block box">
+    <h1 class="member-block-title" id="wuzhe">
+        舞者<span class="title-more">更多</span>
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="member-card col-xs-3">
+                <img src="images/14095R591I.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/Mypsd_13872_201304071542550158B.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/Mypsd_13872_201304071542550002B.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/20120701093800953726.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="member-block box">
+    <h1 class="member-block-title" id="zhuchiren">
+        主持人<span class="title-more">更多</span>
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="member-card col-xs-3">
+                <img src="images/ALD67HS14CJ80026.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/201208170908376955.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/201208171045321330.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/201208171832424531.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="member-block box">
+    <h1 class="member-block-title" id="daoyan">
+        导演<span class="title-more">更多</span>
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="member-card col-xs-3">
+                <img src="images/1.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/img2_src_9633041.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/img2_src_10140999.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/img2_src_9936002.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="member-block box">
+    <h1 class="member-block-title" id="teji">
+        特技<span class="title-more">更多</span>
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="member-card col-xs-3">
+                <img src="images/115928_9bea14042100876fef2036fa14a53.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/001J6NuAgy6LRZHM7Qm1a&690.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/5508002_src.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/e4dfebe271bc3c6183e77a3a39292e17.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="member-block box">
+    <h1 class="member-block-title" id="xiaopin">
+        小品<span class="title-more">更多</span>
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="member-card col-xs-3">
+                <img src="images/img2_src_10129070.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/img2_src_10146572.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/10100647_980x1200_0.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/635295596113772500.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="member-block box">
+    <h1 class="member-block-title" id="zuociqu">
+        作词曲<span class="title-more">更多</span>
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="member-card col-xs-3">
+                <img src="images/W020140403360894969217.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/1370748526_17354500.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/B12045926996018613148.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/177687975861.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="member-block box">
+    <h1 class="member-block-title" id="xiqu">
+        戏曲<span class="title-more">更多</span>
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="member-card col-xs-3">
+                <img src="images/602b8353gw1e4u07sp7yfj21kw2db1kx.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/20140403102508930.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/7699162_7699162_1305695752750_mthumb.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/4801973.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="member-block box">
+    <h1 class="member-block-title" id="cehua">
+        策划<span class="title-more">更多</span>
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="member-card col-xs-3">
+                <img src="images/QQ截图20150119211710.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/img2_src_10093950.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/300001210249133483281567425_950.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/lilgKNBWdYNSQ.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="member-block box">
+    <h1 class="member-block-title" id="jingjiren">
+        经纪人<span class="title-more">更多</span>
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="member-card col-xs-3">
+                <img src="images/img2_src_9655974.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/img2_src_9629499.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/2013-03-28-10-59-50.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+            <div class="member-card col-xs-3">
+                <img src="images/12081610415188.jpg" alt="img">
+                <div class="member-card-info">
+                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
+                    <p>职业\<span>模特</span></p>
+                    <p>点击量\<span>38000</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-
+<aside id="myScrollspy">
+    <ul class="nav nav-pills nav-stacked" role="tablist" data-spy="affix" data-offset-top="1000">
+        <li class="active"><a href="#mote">模特</a></li>
+        <li><a href="#geshou">歌手</a></li>
+        <li><a href="#yueshi">乐师</a></li>
+        <li><a href="#wuzhe">舞者</a></li>
+        <li><a href="#zhuchiren">主持人</a></li>
+        <li><a href="#daoyan">导演</a></li>
+        <li><a href="#teji">特技</a></li>
+        <li><a href="#xiaopin">小品</a></li>
+        <li><a href="#zuociqu">作词曲</a></li>
+        <li><a href="#xiqu">戏曲</a></li>
+        <li><a href="#cehua">策划</a></li>
+        <li><a href="#jingjiren">经纪人</a></li>
+        <li><a href="#">更多</a></li>
+    </ul>
+</aside>
 
 
 <script src="js/jquery-1.10.1.js"></script>

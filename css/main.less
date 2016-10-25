@@ -5,6 +5,7 @@
 }
 
 body {
+  position: relative;
   font-family: 'Microsoft YaHei','宋体','Myriad Pro', 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 a{
@@ -145,6 +146,7 @@ header{
   height: 50px;
   background: #e95589;
   border-radius: 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .searchline {
   *display: inline;
@@ -189,19 +191,19 @@ ul.hot_word li, ul.hot_word li a {
 ul.hot_word li {
   margin: 0 0 0 10px;
 }
-.nav li{
+header .nav li{
   float: left;
   padding:0 50px 0 0;
   list-style: none;
   font-size: 20px;
   letter-spacing: 3px;
 }
-.nav li a:hover{
+header .nav li a:hover{
   color:#e95589;
   text-decoration: none;
   cursor: pointer;
 }
-.nav li a.active-page{
+header .nav li a.active-page{
   color:#e95589;
 }
 img.index-img{
@@ -406,7 +408,7 @@ h3.h3-title::before{
 }
 .src-name{
   font-size: 28px;
-  color:#c1c2bf;
+  color: #969696;
   padding:4px 0;
 }
 .src-name .addr-box{
@@ -429,6 +431,11 @@ h3.h3-title::before{
 .src-carousel{
   margin:30px auto;
   border: 1px solid #eee;
+  .carousel-control{
+    background: rgba(0,0,0,0.5);
+    margin:28% 0;
+    width: 50px;
+  }
 }
 .member-info-card{
   border-top:2px solid #eee;
@@ -510,4 +517,75 @@ h3.h3-title::before{
   height: 50px;
   color:#e95589;
   border: 2px solid #e95589;
+}
+.member-block{
+  margin:10px auto;
+  &:last-of-type{
+    margin-bottom: 500px;
+  }
+  .member-block-title{
+    margin-bottom:20px;
+    padding-bottom:10px;
+    font-size: 18px;
+    width: 100%;
+    border-bottom: 2px solid #e95589;
+    .title-more{
+      float: right;
+      color: #e95589;
+      &::after{
+        content: "";
+        display: inline-block;
+        width: 21px;
+        height: 21px;
+        vertical-align: bottom;
+        background: url("/images/more-right.png") no-repeat 100% 100%;
+      }
+    }
+  }
+  .member-card{
+    padding:0 3px;
+    img{
+      width: 100%;
+    }
+    .member-card-info{
+      margin:5px 0;
+      p{
+        margin-bottom: 2px;
+        font-size: 12px;
+        color:#a8a8a8;
+
+        span{
+          color:black;
+          font-size: 13px;
+          vertical-align: middle;
+          &.icon-1{
+            display: inline-block;
+            margin:0 2px;
+            width: 1.5em;
+            height: 1.5em;
+            background: url("/images/ico_09.png") no-repeat center ;
+            background-size: 100% 100%;
+          }
+          &.icon-2{
+            display: inline-block;
+            margin:0 2px;
+            width: 1.5em;
+            height: 1.5em;
+            background: url("/images/ico_07.png") no-repeat center ;
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.affix-top{
+  position: absolute;
+  top:1500px;
+  left:50px;
+}
+.affix{
+  position: fixed;
+  top:200px;
+  left:50px;
 }
