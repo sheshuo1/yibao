@@ -212,19 +212,19 @@ img.index-img{
   width: 100%;
   min-width: 960px;
 }
-.title{
+.index-title{
   background: #eee;
   padding:30px 0;
   text-align: center;
   font-size: 20px;
   font-weight: 300;
 }
-.title h1{
+.index-title h1{
   font-size: 20px;
   font-weight: 300;
   margin:0;
 }
-.title button.more{
+.index-title button.more{
   font-size: 18px;
   font-weight: 300;
   text-align: center;
@@ -642,7 +642,7 @@ h3.h3-title::before{
 }
 .nav-choose-city{
   color:white;
-  background: linear-gradient(#f7b76b,#ea5c84);
+  background: linear-gradient(#f9c678,#ea5a8e);
   border-radius: 5px;
   li>a{
     color:white;
@@ -668,6 +668,7 @@ h3.h3-title::before{
   }
 }
 .ticket-left-poster{
+  width: 265px;
   img{
     width: 100%;
   }
@@ -695,6 +696,10 @@ h3.h3-title::before{
     width: 100%;
   }
 }
+.ticket-cover-row{
+  padding-bottom: 20px;
+  border-bottom: dashed 1px #ccc;
+}
 .ticket-cover-info{
   p{
     margin-bottom: 0;
@@ -706,18 +711,170 @@ h3.h3-title::before{
   .ticket-price{
     color:red;
     span{
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 700;
     }
   }
   .show-time{
+    font-weight: 700;
     span{
       background: red;
       float: right;
+      color:white;
     }
   }
   .synopsis{
     font-size: 12px;
     color:#aaa;
+  }
+}
+.ticket-cover-sm{
+  margin-top:30px;
+  padding:0 5px;
+  img{
+    width:100%;
+  }
+  .cover-sm-title{
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color:black;
+    background: #eee;
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+    white-space:nowrap;/* 不换行 */
+  }
+}
+.ticket-right-box{
+  border: 1px solid #eee;
+  button{
+    float: left;
+    width: 50%;
+    line-height: 40px;
+    background: #eee;
+    border: none;
+    margin-bottom: 20px;
+    &.btn-actived{
+      background: white;
+    }
+  }
+  .hot-events-box{
+    img{
+      width: 100%;
+    }
+    ul{
+      list-style: none;
+      margin:5px;
+      li{
+        font-size: 12px;
+        padding:5px 0;
+        overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+        text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+        white-space:nowrap;/* 不换行 */
+        border-bottom: dashed 1px black;
+        span{
+          background: #ccc;
+          color:white;
+          padding:2px 5px;
+          margin-right: 5px;
+        }
+        &.hot-event{
+          color:red;
+          span{
+            background: red;
+            padding: 5px 8px;
+          }
+        }
+      }
+    }
+    span.list-more-sm{
+      float: right;
+      font-size: 12px;
+      background: none;
+      padding:5px;
+    }
+  }
+}
+.ticket-right-cover{
+  img{
+    width: 100%;
+  }
+}
+.ticket-recommend{
+  margin:20px auto;
+  button{
+    float: left;
+    width: 200px;
+    line-height: 30px;
+    background: #eee;
+    border: none;
+    font-size: 12px;
+    &.btn-active{
+      position: relative;
+      color:white;
+      background: #e41b46;
+      &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        top:100%;
+        left:90px;
+        border-top: 10px solid #e41b46;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+
+      }
+    }
+  }
+  .ticket-recommend-box{
+    clear: both;
+    width: 100%;
+    border: 1px solid #eee;
+    .ticket-recommend-card{
+      display: inline-block;
+      vertical-align: top;
+      margin-right: -4px;
+      padding:10px 20px;
+      width: 20%;
+      img{
+        width: 100%;
+      }
+      p{
+        margin:5px;
+        overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+        text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+        white-space:nowrap;/* 不换行 */
+        font-size: 12px;
+        &.recommend-card-price{
+          color: #bbb;
+        }
+      }
+    }
+  }
+}
+.ticket-hot-shows{
+  padding:0 10px;
+  .hot-shows-title{
+    border-bottom: solid 1px black;
+    font-size: 20px;
+    line-height: 40px;
+    span{
+      font-size: 14px;
+      float: right;
+    }
+  }
+  .hot-shows-box{
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: flex-start;
+    img{
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding:0 5px 5px 0;
+    }
   }
 }
