@@ -18,6 +18,11 @@ a:hover{
   width: 960px;
   margin:0 auto;
 }
+.text-ellipsis{
+  overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space:nowrap;/* 不换行 */
+}
 header{
   border-bottom: 2px solid #e95689;
   padding-bottom: 9px;
@@ -207,6 +212,10 @@ header .nav li a:hover{
 }
 header .nav li a.active-page{
   color:#e95589;
+}
+#carousel-banner{
+  width: 100%;
+  min-width: 960px;
 }
 img.index-img{
   width: 100%;
@@ -653,6 +662,7 @@ h3.h3-title::before{
   li:hover>a,li:hover>a:focus,li:hover>a:hover{
     background: orangered;
   }
+
 }
 .choose-city-info{
   background: #f9f9f9;
@@ -875,6 +885,198 @@ h3.h3-title::before{
       flex-grow: 1;
       flex-shrink: 1;
       padding:0 5px 5px 0;
+    }
+  }
+}
+.factory-top-area{
+  margin-bottom: 20px;
+  height: 260px;
+  div.col-xs-3,div.col-xs-6{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .factory-top-left{
+    border: 2px solid #cecccf;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+    &::after{
+      content: "";
+      display: block;
+      height: 10px;
+      width: 100%;
+      background:url("/images/down-icon-4.png") no-repeat center;
+      background-size: 100%;
+      position: absolute;
+      bottom:0;
+    }
+    &::before{
+      content: "";
+      display: block;
+      height: 10px;
+      width: 100%;
+      background:url("/images/up-icon-4.png") no-repeat center;
+      background-size: 100%;
+      position: absolute;
+      top:0;
+    }
+    ul{
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      list-style: none;
+      &::-webkit-scrollbar{
+        width: 0;
+      }
+      li{
+        a{
+          color: #969696;
+        }
+        position: relative;
+        overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+        text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+        white-space:nowrap;/* 不换行 */
+        line-height: 20px;
+        font-size: 16px;
+        padding-left: 10px;
+        margin:0 0 5px 10px;
+        border-bottom: 1px solid #ccc;
+        &::before{
+          content: "";
+          display: block;
+          position: absolute;
+          top:7px;
+          left:0px;
+          width: 5px;
+          height: 5px;
+          background: red;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  .factory-top-center{
+    height: 260px;
+    .carousel-inner{
+      height: 100%;
+      .item{
+        height: 100%;
+        img{
+          height: 100%;
+        }
+      }
+    }
+  }
+  .factory-top-right{
+    border: 2px solid #cecccf;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+    .hot-need{
+      font-size: 20px;
+      padding-left: 10px;
+      span{
+        font-size: 14px;
+        position: relative;
+        left:100px;
+      }
+    }
+    li{
+      border-bottom: dashed 1px #eee;
+      p{
+        overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+        text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+        white-space:nowrap;/* 不换行 */
+        font-size: 12px;
+        margin:0 5px 5px 5px;
+        &.factory-top-right-title{
+          span{
+            color:red;
+          }
+        }
+        &.factory-top-right-info{
+          color: #bbb;
+          span{
+            float: right;
+          }
+        }
+      }
+    }
+    .btn-publish-need{
+      font-size: 20px;
+      color: white;
+      width: 115px;
+      height: 32px;
+      background: #e95589;
+      border-radius: 5px;
+      border: none;
+      position: absolute;
+      bottom: 15px;
+      left:60px;
+    }
+  }
+}
+.factory-class-area{
+  .factory-class-title{
+    font-size: 18px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+    &::after{
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: black;
+      position: absolute;
+      bottom:0;
+      left: 5em;
+    }
+  }
+  .factory-class-box{
+    margin: 0 -25px;
+    .col-xs-3,.col-xs-6{
+      padding:0 10px;
+    }
+    img{
+      width: 100%;
+    }
+    .factory-project-card{
+      height: 255px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      .factory-project-card-title{
+        font-size: 17px;
+        .text-ellipsis
+      }
+      .factory-project-card-progress{
+        margin: 15px 5px;
+        height: 3px;
+        background: #dcdcdc;
+        border-radius: 3px;
+        .factory-project-card-now{
+          height: 100%;
+          background: #00ff96;
+        }
+      }
+      .factory-project-card-progress-info{
+        position: relative;
+        p{
+          position: absolute;
+          width: 100%;
+          top:0;
+          left:0;
+          font-size: 12px;
+          color: #969696;
+          &:nth-of-type(1){
+            text-align: center;
+          }
+          &:last-of-type{
+            text-align: right;
+          }
+        }
+      }
     }
   }
 }
