@@ -310,32 +310,30 @@
                 <h2>热门众筹</h2>
                 <div id="crowdfunding-list-slider">
                     <ul class="sliderbox">
-                        <li><a href="#" ><p>问贫困家庭先心病儿童救助行动</p></a>
-                            <a href="#" ><p>在张家界，建一座世外桃源</p></a>
-                            <a href="#" ><p>电影《剑河》圆你武侠梦</p></a>
-                            <a href="#" ><p>为陈翔筹人生第一场演唱会</p></a>
-                            <a href="#" ><p>爱情只差一步却《触不可及》</p></a>
-                            <a href="#" ><p>黄义达十年纪念演唱会北京站</p></a>
-                            <a href="#" ><p>王小兄弟-群像微电影《你》</p></a>
-                            <a href="#" ><p>为陈翔筹人生第一场演唱会</p></a>
-                        </li>
-                        <li>
-                            <a href="#" ><p>问贫困家庭先心病儿童救助行动</p></a>
-                            <a href="#" ><p>在张家界，建一座世外桃源</p></a>
-                            <a href="#" ><p>电影《剑河》圆你武侠梦</p></a>
-                            <a href="#" ><p>为陈翔筹人生第一场演唱会</p></a>
-                            <a href="#" ><p>爱情只差一步却《触不可及》</p></a>
-                            <a href="#" ><p>黄义达十年纪念演唱会北京站</p></a>
-                            <a href="#" ><p>王小兄弟-群像微电影《你》</p></a>
-                            <a href="#" ><p>为陈翔筹人生第一场演唱会</p></a>
-                        </li>
-                        <li>
-                            <a href="#" ><p>问贫困家庭先心病儿童救助行动</p></a>
-                            <a href="#" ><p>在张家界，建一座世外桃源</p></a>
-                            <a href="#" ><p>电影《剑河》圆你武侠梦</p></a>
-                            <a href="#" ><p>为陈翔筹人生第一场演唱会</p></a>
-                        </li>
-                    </ul>
+                        <li><a href="#">问贫困家庭先心病儿童救助行动</a></li>
+                        <li><a href="#">在张家界，建一座世外桃源</a></li>
+                        <li><a href="#">电影《剑河》圆你武侠梦</a></li>
+                        <li><a href="#">为陈翔筹人生第一场演唱会</a></li>
+                        <li><a href="#">爱情只差一步却《触不可及》</a></li>
+                        <li><a href="#">黄义达十年纪念演唱会北京站</a></li>
+                        <li><a href="#">王小兄弟-群像微电影《你》</a></li>
+                        <li><a href="#">为陈翔筹人生第一场演唱会</a></li>
+                        <li><a href="#">问贫困家庭先心病儿童救助行动</a></li>
+                        <li><a href="#">在张家界，建一座世外桃源</a></li>
+                        <li><a href="#">电影《剑河》圆你武侠梦</a></li>
+                        <li><a href="#">为陈翔筹人生第一场演唱会</a></li>
+                        <li><a href="#">爱情只差一步却《触不可及》</a></li>
+                        <li><a href="#">黄义达十年纪念演唱会北京站</a></li>
+                        <li><a href="#">王小兄弟-群像微电影《你》</a></li>
+                        <li><a href="#">为陈翔筹人生第一场演唱会</a></li><li><a href="#">问贫困家庭先心病儿童救助行动</a></li>
+                        <li><a href="#">在张家界，建一座世外桃源</a></li>
+                        <li><a href="#">电影《剑河》圆你武侠梦</a></li>
+                        <li><a href="#">为陈翔筹人生第一场演唱会</a></li>
+                        <li><a href="#">爱情只差一步却《触不可及》</a></li>
+                        <li><a href="#">黄义达十年纪念演唱会北京站</a></li>
+                        <li><a href="#">王小兄弟-群像微电影《你》</a></li>
+                        <li><a href="#">为陈翔筹人生第一场演唱会</a></li>
+                      </ul>
                 </div>
 
             </div>
@@ -516,14 +514,19 @@
 </div>
 <script src="js/jquery-1.10.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/power-slider.min.js"></script>
+<script src="js/app.js"></script>
 <script>
     $('#carousel-crowdfunding .item').hover(function(){
         $(this).find('.carousel-caption').filter(':not(:animated)').slideDown();
     },function(){
-        $(this).find('.carousel-caption').slideUp('fast');
-    });
-    $("#crowdfunding-list-slider").powerSlider({delayTime:5000});
+        $(this).find('.carousel-caption').slideUp('fast');});
+    setTimeout(function () {
+        app.scrollTextUp('#crowdfunding-list-slider',{
+            times:5000,
+            number:5
+        });
+    },1000);
+
 </script>
 </body>
 </html>

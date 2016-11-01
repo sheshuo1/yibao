@@ -1,11 +1,12 @@
+//公共样式
 * {
   margin: 0 0;
   padding: 0 0;
   outline: none;
 }
-
 body {
   position: relative;
+  padding-bottom: 50px;
   font-family: 'Microsoft YaHei','宋体','Myriad Pro', 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 a{
@@ -23,6 +24,9 @@ a:hover{
   text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
   white-space:nowrap;/* 不换行 */
 }
+
+
+//header样式
 header{
   border-bottom: 2px solid #e95689;
   padding-bottom: 9px;
@@ -213,6 +217,8 @@ header .nav li a:hover{
 header .nav li a.active-page{
   color:#e95589;
 }
+
+//index.html
 #carousel-banner{
   width: 100%;
   min-width: 960px;
@@ -290,11 +296,10 @@ img.index-img{
   overflow: hidden;
   text-align: center;
 }
-.index-news-list p{
-  white-space:nowrap;
-  overflow: hidden;
+.index-news-list li{
+  .text-ellipsis;
 }
-.index-news-list p::before{
+.index-news-list li::before{
   content: "";
   display: inline-block;
   width: 5px;
@@ -334,14 +339,14 @@ p.crowdfunding-progress-people{
   margin-top:0;
 }
 #crowdfunding-list-slider{
-  height: 280px;
+  height: 300px;
   overflow: hidden;
   position:relative;
 }
 .sliderbox{
   position:relative;
 }
-.index-crowdfunding-list p{
+.index-crowdfunding-list li{
   font-size: 18px;
 }
 h2.h2-title{
@@ -414,6 +419,8 @@ h3.h3-title::before{
   border: 1px solid #ccc;
   padding:10px;
 }
+
+//resource.html
 .src-carousel{
   padding-left: 14px;
 }
@@ -485,16 +492,20 @@ h3.h3-title::before{
   border: 1px solid #eee;
   height: 449px;
   margin-left:-15px;
+  #src-work-scroll{
+    height: 250px;
+    overflow: hidden;
+    position:relative;
+  }
 }
 .src-hot-work-list ol{
+  position:relative;
   list-style-position: inside;
   padding-top:10px;
 
 }
 .src-hot-work-list li{
-  overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
-  text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
-  white-space:nowrap;/* 不换行 */
+  .text-ellipsis;
   color:#aaa;
 }
 .src-hot-work-list li a{
@@ -600,6 +611,56 @@ h3.h3-title::before{
   top:200px;
   left:50px;
 }
+
+
+.nav-aside{
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  width: 149px;
+  height: 332px;
+  padding:3px 3px;
+  overflow: hidden;
+  border-radius: 30px;
+  background: url("/images/src-nav-border.png") no-repeat;
+  background-size: 100% 100%;
+  table{
+    width: 100%;
+    height: 227px;
+    border-spacing:2px;
+    border-collapse: separate;
+    tr{
+      height: 35px;
+      &.first-line{
+        height: 52px;
+        td{
+          border-radius: 25px 0 0 0;
+        }
+      }
+    }
+    td{
+      text-align: center;
+      color:white;
+      &>a{
+        color: inherit;
+      }
+      &.active{
+        background: #ed8300;
+      }
+    }
+  }
+  button{
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 18px;
+    line-height: 30px;
+    color:white;
+    margin-top: 10px;
+  }
+}
+
+//ticket.html
 .ticket-menu{
   margin:10px auto;
 }
@@ -750,9 +811,7 @@ h3.h3-title::before{
     font-size: 12px;
     color:black;
     background: #eee;
-    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
-    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
-    white-space:nowrap;/* 不换行 */
+    .text-ellipsis;
   }
 }
 .ticket-right-box{
@@ -778,9 +837,7 @@ h3.h3-title::before{
       li{
         font-size: 12px;
         padding:5px 0;
-        overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
-        text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
-        white-space:nowrap;/* 不换行 */
+        .text-ellipsis;
         border-bottom: dashed 1px black;
         span{
           background: #ccc;
@@ -832,7 +889,6 @@ h3.h3-title::before{
         border-top: 10px solid #e41b46;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
-
       }
     }
   }
@@ -851,9 +907,7 @@ h3.h3-title::before{
       }
       p{
         margin:5px;
-        overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
-        text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
-        white-space:nowrap;/* 不换行 */
+        .text-ellipsis;
         font-size: 12px;
         &.recommend-card-price{
           color: #bbb;
@@ -888,6 +942,9 @@ h3.h3-title::before{
     }
   }
 }
+
+
+//factory.html
 .factory-top-area{
   margin-bottom: 20px;
   height: 260px;
@@ -922,7 +979,7 @@ h3.h3-title::before{
     }
     ul{
       width: 100%;
-      height: 100%;
+      position: relative;
       overflow-x: hidden;
       overflow-y: auto;
       list-style: none;
@@ -934,9 +991,7 @@ h3.h3-title::before{
           color: #969696;
         }
         position: relative;
-        overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
-        text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
-        white-space:nowrap;/* 不换行 */
+        .text-ellipsis;
         line-height: 20px;
         font-size: 16px;
         padding-left: 10px;
@@ -973,6 +1028,13 @@ h3.h3-title::before{
     height: 260px;
     overflow: hidden;
     position: relative;
+    #factory-top-right{
+      height: 144px;
+      overflow: hidden;
+      ul{
+        position: relative;
+      }
+    }
     .hot-need{
       font-size: 20px;
       padding-left: 10px;
@@ -985,9 +1047,7 @@ h3.h3-title::before{
     li{
       border-bottom: dashed 1px #eee;
       p{
-        overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
-        text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
-        white-space:nowrap;/* 不换行 */
+        .text-ellipsis;
         font-size: 12px;
         margin:0 5px 5px 5px;
         &.factory-top-right-title{
@@ -1080,68 +1140,237 @@ h3.h3-title::before{
     }
   }
 }
+
+
+//news.html
 .news-main-area{
   .row{
-    margin:0 -30px;
-  }
-  .news-index-item{
-    margin:15px 0;
-    img{
-      width: 128px;
-      height: 86px;
-      float: left;
-    }
-    p{
-      .text-ellipsis;
-      padding-left: 10px;
-      &.news-red-title{
-        color:#aa0000;
+    margin:30px -30px;
+    .news-left-area{
+      border-right:1px solid #ccc;
+      .news-index-item{
+        margin:15px 0;
+        img{
+          width: 128px;
+          height: 86px;
+          float: left;
+        }
+        p{
+          .text-ellipsis;
+          padding-left: 10px;
+          &.news-red-title{
+            color:#aa0000;
+            font-size: 18px;
+          }
+        }
+      }
+      .news-hot-title{
         font-size: 18px;
+        font-weight:700;
       }
-    }
-  }
-  .news-hot-title{
-    font-size: 18px;
-    font-weight:700;
-  }
-  .news-hot-1{
-    img{
-      float: left;
-      padding-right: 10px;
-    }
-    .news-hot-tag{
-      padding: 10px 0;
-      border-bottom: solid 1px #ccc;
-      span{
-        float: right;
+      .news-hot-1{
+        img{
+          float: left;
+          padding-right: 10px;
+        }
+        .news-hot-tag{
+          padding: 10px 0;
+          border-bottom: solid 1px #ccc;
+          span{
+            float: right;
+          }
+        }
       }
-    }
-  }
-  .news-hot-2{
-    .news-hot-info{
-      position: relative;
-      &>img{
-        float: left;
-        margin-right: 5px;
+      .news-hot-2{
+        .news-hot-info{
+          position: relative;
+          &>img{
+            float: left;
+            margin-right: 5px;
+          }
+          .news-inline-list{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            section{
+              display: inline-block;
+              p{
+                margin-bottom: 0;
+                .text-ellipsis;
+              }
+            }
+          }
+        }
+        .news-hot-tag{
+          padding: 10px 0;
+          border-bottom: solid 1px #ccc;
+          span{
+            float: right;
+          }
+        }
       }
-      .news-inline-list{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        section{
-          display: inline-block;
-          p{
-            margin-bottom: 0;
-            .text-ellipsis;
+      .news-hot-3{
+        .news-inline-list{
+          section{
+            display: inline-block;
+            width: 33.33%;
+            margin:0 -4px;
+            padding: 0 5px;
+            img{
+              width: 100%;
+            }
+            p{
+              .text-ellipsis;
+              text-align: center;
+            }
+          }
+        }
+        .news-hot-tag {
+          padding: 10px 0;
+          border-bottom: solid 1px #ccc;
+          span {
+            float: right;
           }
         }
       }
     }
-    .news-hot-tag{
-      padding: 10px 0;
-      border-bottom: solid 1px #ccc;
-      span{
-        float: right;
+    .news-right-area{
+      .switch-btn button{
+        width: 47%;
+        background: #fef9ed;
+        line-height: 2;
+        font-size: 16px;
+        border: 1px solid #be0900;
+        float: left;
+        &:nth-of-type(2){
+          float: right;
+        }
+        &.btn-active{
+          position: relative;
+          color:white;
+          background: #be0900;
+          &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            top:100%;
+            left:50%-7px;
+            border-top: 10px solid #be0900;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+          }
+        }
+      }
+      .news-weibo-switch-box{
+        margin:15px 0;
+        border-bottom:1px solid #ccc;
+        section{
+          float: left;
+          width: 50%;
+          padding:5px;
+          p{
+            .text-ellipsis;
+          }
+        }
+      }
+      .news-weibo-list{
+        padding-left: 10px;
+        list-style-position: inside;
+        li{
+          &>a:first-of-type{
+            margin-left: -15px;
+          }
+          .text-ellipsis;
+          line-height: 2;
+          color: red;
+        }
+      }
+      .news-solo-box{
+        margin: 15px 0;
+        padding:15px 0;
+        border-top: 2px solid #ccc;
+        border-bottom: 2px solid #ccc;
+        .news-solo-title{
+          font-size: 20px;
+          color: #be0900;
+          span{
+            font-size: 14px;
+            color: black;
+            float: right;
+          }
+        }
+        .news-solo-list{
+          p{
+            .text-ellipsis;
+            padding-left: 5px;
+            line-height: 2.5;
+            background: #eee;
+            margin-bottom: 5px;
+          }
+          img{
+            width: 100%;
+          }
+        }
+      }
+      .news-gossip-top10{
+        position: relative;
+        #news-gossip-scroll{
+          position: relative;
+          height: 336px;
+          overflow: hidden;
+      }
+        .news-gossip-top10-title{
+          font-size: 20px;
+          color: #be0900;
+          span{
+            font-size: 14px;
+            color: black;
+            float: right;
+          }
+        }
+        .news-gossip-list{
+          position: relative;
+          padding-left: 10px;
+          list-style: inside;
+          li{
+            &>a:first-of-type{
+              margin-left: -15px;
+            }
+            .text-ellipsis;
+            line-height: 2;
+            color: red;
+          }
+        }
+      }
+      .news-movies-box{
+        .news-movies-bar{
+          margin:15px 0;
+          .btn-hot-movie{
+            float: left;
+            margin-right: 10px;
+            background-color: #be0900;
+            border-color: #be0900;
+          }
+          .dropdown{
+            float: left;
+          }
+        }
+        .news-movie-card{
+          img{
+            float: left;
+            margin-right: 5px;
+          }
+          .news-movie-card-title{
+            font-size: 16px;
+            &>span{
+              float: right;
+              span{
+                font-size: 24px;
+                color:red;
+              }
+            }
+          }
+        }
       }
     }
   }

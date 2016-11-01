@@ -220,21 +220,35 @@
         </div>
         <div class="col-xs-4 src-hot-work-list">
             <h1><b>推荐工作</b></h1>
-            <ol>
-                <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
-                <li><a>【置顶】上海外滩平面拍摄需要女模5名</a></li>
-                <li><a>【置顶】北京平面拍摄需要男外模一名</a></li>
-                <li><a>【置顶】深圳时装平面拍摄需要女模10名</a></li>
-                <li><a>【置顶】广州平面拍摄需要女模3名</a></li>
-                <li><a>【置顶】北京内衣平面拍摄需要女模5名</a></li>
-                <li><a>【置顶】杭州时装平面拍摄需要女外模3名</a></li>
-                <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
-                <li><a>【置顶】上海时装平面拍摄需要男模6名</a></li>
-                <li><a>【置顶】南宁内衣平面拍摄需要女模一名</a></li>
-                <li><a>【置顶】苏州内衣平面拍摄需要男模4名</a></li>
-                <li><a>【置顶】广州平面拍摄需要女外模一名</a></li>
+            <div id="src-work-scroll">
+                <ol>
+                    <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
+                    <li><a>【置顶】上海外滩平面拍摄需要女模5名</a></li>
+                    <li><a>【置顶】北京平面拍摄需要男外模一名</a></li>
+                    <li><a>【置顶】深圳时装平面拍摄需要女模10名</a></li>
+                    <li><a>【置顶】广州平面拍摄需要女模3名</a></li>
+                    <li><a>【置顶】北京内衣平面拍摄需要女模5名</a></li>
+                    <li><a>【置顶】杭州时装平面拍摄需要女外模3名</a></li>
+                    <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
+                    <li><a>【置顶】上海时装平面拍摄需要男模6名</a></li>
+                    <li><a>【置顶】南宁内衣平面拍摄需要女模一名</a></li>
+                    <li><a>【置顶】苏州内衣平面拍摄需要男模4名</a></li>
+                    <li><a>【置顶】广州平面拍摄需要女外模一名</a></li>
+                    <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
+                    <li><a>【置顶】上海外滩平面拍摄需要女模5名</a></li>
+                    <li><a>【置顶】北京平面拍摄需要男外模一名</a></li>
+                    <li><a>【置顶】深圳时装平面拍摄需要女模10名</a></li>
+                    <li><a>【置顶】广州平面拍摄需要女模3名</a></li>
+                    <li><a>【置顶】北京内衣平面拍摄需要女模5名</a></li>
+                    <li><a>【置顶】杭州时装平面拍摄需要女外模3名</a></li>
+                    <li><a>【置顶】深圳内衣平面拍摄需要女外模一名</a></li>
+                    <li><a>【置顶】上海时装平面拍摄需要男模6名</a></li>
+                    <li><a>【置顶】南宁内衣平面拍摄需要女模一名</a></li>
+                    <li><a>【置顶】苏州内衣平面拍摄需要男模4名</a></li>
+                    <li><a>【置顶】广州平面拍摄需要女外模一名</a></li>
+                </ol>
+            </div>
 
-            </ol>
             <button class="list-more">MORE></button>
             <button class="publish-work-btn">
                 发布工作招募
@@ -735,7 +749,7 @@
     </div>
 </div>
 
-<aside id="myScrollspy">
+<!--<aside id="myScrollspy">
     <ul class="nav nav-pills nav-stacked" role="tablist" data-spy="affix" data-offset-top="1000">
         <li class="active"><a href="#mote">模特</a></li>
         <li><a href="#geshou">歌手</a></li>
@@ -751,10 +765,49 @@
         <li><a href="#jingjiren">经纪人</a></li>
         <li><a href="#">更多</a></li>
     </ul>
+</aside>-->
+
+<aside class="nav-aside">
+    <table>
+        <tr class="first-line">
+            <td><a href="#mote">模特</a></td>
+            <td><a href="#geshou">歌手</a></td>
+        </tr>
+        <tr>
+            <td><a href="#yueshi">乐师</a></td>
+            <td><a href="#wuzhe">舞者</a></td>
+        </tr>
+        <tr>
+            <td><a href="#zhuchiren">主持人</a></td>
+            <td><a href="#daoyan">导演</a></td>
+        </tr>
+        <tr>
+            <td><a href="#teji">特技</a></td>
+            <td><a href="#xiaopin">小品</a></td>
+        </tr>
+        <tr>
+            <td><a href="#zuociqu">作词曲</a></td>
+            <td><a href="#xiqu">戏曲</a></td>
+        </tr>
+        <tr>
+            <td><a href="#cehua">策划</a></td>
+            <td><a href="#jingjiren">经纪人</a></td>
+        </tr>
+    </table>
+    <button>更多</button>
 </aside>
 
 
 <script src="js/jquery-1.10.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+
+    $(function () {
+        setTimeout(function () {
+            app.scrollTextUp('#src-work-scroll', {contair: 'ol', inner: 'li', number: 5, times: 2000});
+        },1000);
+    });
+</script>
 </body>
 </html>
