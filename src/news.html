@@ -285,7 +285,9 @@
 <script src="js/app.js"></script>
 <script>
     $(function () {
-        setTimeout(function(){app.scrollTextUp('#news-gossip-scroll',{times:5000,number:5});},1000);
+        setTimeout(function(){
+            app.scrollTextUp('#news-gossip-scroll',{delay:5000,number:5});
+        },1000);
     })
 </script>
 </body>

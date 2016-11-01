@@ -4,8 +4,9 @@ app.scrollTextUp = function (target, config) {
     var setting = {};
     setting.contair = config.contair || 'ul';
     setting.inner = config.inner || 'li';
-    setting.times = config.times || 1000;
+    setting.time = config.time || 1000;
     setting.number = config.number || 1;
+    setting.delay=config.delay||2000;
 
     var $scroll = $target.find(setting.contair);
     var item_height = parseInt($scroll.find(setting.inner)[0].offsetHeight);
@@ -19,9 +20,9 @@ app.scrollTextUp = function (target, config) {
         var now_top = parseInt($scroll.css('top'));
         var now_bottom = -(sum_height - contair_height);
         if (now_top > now_bottom) {
-            $scroll.animate({'top': now_top - scroll_height + 'px'}, 1000);
+            $scroll.animate({'top': now_top - scroll_height + 'px'}, setting.time);
         } else {
-            $scroll.animate({'top': '0px'}, 1000);
+            $scroll.animate({'top': '0px'}, setting.time);
         }
-    }, setting.times);
+    }, setting.delay);
 };
