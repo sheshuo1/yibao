@@ -144,7 +144,7 @@
             </div>
         </div>
         <div class="col-xs-3">
-            <div class="ticket-right-box clearfix">
+            <div class="ticket-right-box clearfix ticket-switch-btn">
                 <button class="btn-events btn-actived">热门活动</button>
                 <button class="btn-special">精彩专题</button>
                 <div class="hot-events-box">
@@ -165,8 +165,10 @@
     </div>
 </div>
 <div class="box container-fluid ticket-recommend">
-    <button class="btn-guess-like">猜您喜欢</button>
-    <button class="btn-recommend btn-active">每日为您推荐最in的演出</button>
+    <div class="ticket-switch-btn-2">
+        <button class="btn-guess-like">猜您喜欢</button>
+        <button class="btn-recommend btn-active">每日为您推荐最in的演出</button>
+    </div>
     <div class="ticket-recommend-box">
         <div class="ticket-recommend-card">
             <img src="images/未标题-3_13.jpg" alt="img">
@@ -222,5 +224,17 @@
 
 <script src="js/jquery-1.10.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('.ticket-switch-btn button').on('mouseover',function () {
+            $(this).addClass('btn-actived');
+            $(this).siblings('button').removeClass('btn-actived');
+        });
+        $('.ticket-switch-btn-2 button').on('mouseover',function () {
+            $(this).addClass('btn-active');
+            $(this).siblings('button').removeClass('btn-active');
+        });
+    });
+</script>
 </body>
 </html>

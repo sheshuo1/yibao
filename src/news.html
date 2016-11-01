@@ -171,7 +171,7 @@
         </div>
         <div class="col-xs-4 news-right-area">
             <div class="news-weibo-hot">
-                <div class="switch-btn clearfix">
+                <div class="news-switch-btn clearfix">
                     <button class="btn-active">微博热点</button>
                     <button>明星秒拍</button>
                 </div>
@@ -242,7 +242,7 @@
                 </div>
             </div>
             <div class="news-movies-box">
-                <div class="switch-btn clearfix">
+                <div class="news-switch-btn clearfix">
                     <button class="btn-active">影讯</button>
                     <button>演出</button>
                 </div>
@@ -288,6 +288,11 @@
         setTimeout(function(){
             app.scrollTextUp('#news-gossip-scroll',{delay:5000,number:5});
         },1000);
+
+        $('.news-switch-btn button').on('mouseover',function () {
+            $(this).addClass('btn-active');
+            $(this).siblings('button').removeClass('btn-active');
+        });
     })
 </script>
 </body>
