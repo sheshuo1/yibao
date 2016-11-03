@@ -1,4 +1,5 @@
 var app={};
+
 app.scrollTextUp = function (target, config) {
     var $target = $(target);
     var setting = {};

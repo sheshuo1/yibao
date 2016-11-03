@@ -29,7 +29,7 @@ var cssSrc = 'src/css/*.css',
 
 
 //自动刷新页面
-gulp.task('reload', function() {
+gulp.task('reload',function() {
     livereload.reload();
 });
 
@@ -37,6 +37,12 @@ gulp.task('reload', function() {
 gulp.task('watch', function() {
   livereload.listen();
   gulp.watch('**/*.*', ['reload']);
+});
+
+//监听less文件变动,编译后刷新页面
+gulp.task('watch-less', function() {
+    livereload.listen();
+    gulp.watch('**/*.*', ['less']);
 });
 
 //自动添加css前缀
@@ -55,7 +61,8 @@ gulp.task('autofx', function () {
 gulp.task('less',function(){
     gulp.src('src/css/*.less')
         .pipe(less())
-        .pipe(gulp.dest(cssSrc));
+        .pipe(gulp.dest('src/css'))
+        .pipe(livereload());
 });
 
 //压缩图片
@@ -142,7 +149,6 @@ gulp.task('build', function (done) {
         ['minhtml'],
         done);
 });
-
 
 
 gulp.task('help', function() {
