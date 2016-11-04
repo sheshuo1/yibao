@@ -42,7 +42,7 @@ gulp.task('watch', function() {
 //监听less文件变动,编译后刷新页面
 gulp.task('watch-less', function() {
     livereload.listen();
-    gulp.watch('**/*.*', ['less']);
+    gulp.watch('**/*.*', ['less','reload']);
 });
 
 //自动添加css前缀

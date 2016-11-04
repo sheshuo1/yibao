@@ -1447,3 +1447,191 @@ h3.h3-title::before{
     }
   }
 }
+
+//news-content.html
+.news-content-main{
+  margin:30px auto;
+  border: 1px solid #ccc;
+  h1{
+    font-size: 22px;
+  }
+  .news-title-info{
+    color:#969696;
+    span{
+      float: right;
+    }
+  }
+  .news-caption-block{
+    margin:15px 0;
+    position: relative;
+    padding-bottom: 30px;
+    .news-pic-number{
+      float: left;
+      padding-right: 10px;
+      span{
+        color: red;
+        font-size: 24px;
+      }
+    }
+    p{
+      padding-right: 100px;
+    }
+    .news-follow-number{
+      img{
+        width: 100%;
+      }
+      width: 74px;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding:5px 15px;
+      border-left: 1px solid #ccc;
+    }
+  }
+  .news-pic-nav{
+    position: relative;
+    .news-pic-nav-scroll{
+      position: relative;
+      width: 60%;
+      margin:0 auto;
+
+      .news-pic-nav-border{
+        overflow: hidden;
+        white-space:nowrap;
+        margin: 0 15px;
+        position: relative;
+        height: 100px;
+        .news-pic-nav-box{
+          position: absolute;
+          overflow: visible;
+          white-space:nowrap;
+          img{
+            padding:0 5px;
+            max-height: 100px;
+          }
+        }
+      }
+      button{
+        position: absolute;
+        height: 100%;
+        top:0;
+        background: rgba(0,0,0,0.3);
+        border: none;
+        &.btn-scroll-left{
+          left:-10px;
+        }
+        &.btn-scroll-right{
+          right:-10px;
+        }
+      }
+    }
+    .news-pre-link,.news-next-link{
+      width: 80px;
+      height: 100px;
+      overflow: hidden;
+      position: absolute;
+      top:0;
+      &.news-pre-link{
+        left:20px;
+      }
+      &.news-next-link{
+        right:20px;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        border: 5px solid #ddd;
+        padding: 5px;
+        background: #fff;
+      }
+    }
+  }
+  .news-content-foot{
+    background: #eee;
+    line-height: 28px;
+    margin:15px 0;
+    span{
+      float: right;
+    }
+  }
+  .follow-member-bar{
+    padding:20px 10px;
+    position: relative;
+    .follow-member-card{
+      width: 90px;
+      display: inline-block;
+      .follow-member-pic{
+        position: relative;
+        width: 100%;
+        padding:0 15px;
+        img{
+          width: 100%;
+        }
+        &:before{
+          content: "";
+          width: 15px;
+          height: 14px;
+          position: absolute;
+          left: 15px;
+          bottom: 0;
+          background: green;
+          border: 1px solid greenyellow;
+        }
+        &:after{
+          content: "";
+          width: 12px;
+          height: 6px;
+          position: absolute;
+          left: 15px;
+          bottom: 5px;
+          border-left: 2px solid white;
+          border-bottom: 2px solid white;
+          transform: rotate(-45deg);
+        }
+      }
+      p{
+        text-align: center;
+        margin-bottom: 2px;
+        color:#969696;
+        font-size: 12px;
+        &.follow-member-name{
+          color:black;
+          font-size: 14px;
+        }
+      }
+    }
+    .one-click-follow{
+      background: #b02221;
+      border:none;
+      border-radius: 5px;
+      height: 40px;
+      width: 120px;
+      color:white;
+      font-size: 18px;
+      position: absolute;
+      right: 20px;
+      top:50%-20px;
+      span{
+        font-size: 24px;
+      }
+    }
+    .follow-more {
+      text-align: right;
+      padding-right: 30px;
+    }
+  }
+  .news-hot-news{
+    .news-hot-news-card{
+      width: 25%;
+      float: left;
+      padding:0 10px;
+      img{
+        width: 100%;
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+}

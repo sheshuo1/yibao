@@ -44,10 +44,10 @@
     <nav class="box nav">
         <ul>
             <li><a href="index.html">首 页</a></li>
-            <li><a class="active-page" href="resource.html">演艺资源</a></li>
+            <li><a href="resource.html">演艺资源</a></li>
             <li><a href="news.html">娱乐新闻</a></li>
             <li><a href="factory.html">创意工坊</a></li>
-            <li><a href="ticket.html">票务整合</a></li>
+            <li><a class="active-page" href="ticket.html">票务整合</a></li>
         </ul>
     </nav>
 </header>
@@ -182,17 +182,7 @@
 <script src="js/jquery-1.10.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
-    $(function () {
-        $('.search-choose-area .choose-item button').on('click',function () {
-            $(this).addClass('selected');
-            $(this).siblings('button').add($(this).parent().parent().find('.choose-all button')).removeClass('selected');
 
-        });
-        $('.search-choose-area .choose-all button').on('click',function () {
-            $(this).addClass('selected');
-            $(this).parent().parent().find('.choose-item button').removeClass('selected');
-        });
-    });
 </script>
 </body>
 </html>
