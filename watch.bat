@@ -1,2 +1,2 @@
-gulp watch
+gulp watch-less
 start

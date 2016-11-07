@@ -29,7 +29,7 @@ var cssSrc = 'src/css/*.css',
 
 
 //自动刷新页面
-gulp.task('reload',function() {
+gulp.task('reload',['less'],function() {
     livereload.reload();
 });
 
@@ -37,12 +37,6 @@ gulp.task('reload',function() {
 gulp.task('watch', function() {
   livereload.listen();
   gulp.watch('**/*.*', ['reload']);
-});
-
-//监听less文件变动,编译后刷新页面
-gulp.task('watch-less', function() {
-    livereload.listen();
-    gulp.watch('**/*.*', ['less','reload']);
 });
 
 //自动添加css前缀
