@@ -634,8 +634,8 @@ h3.h3-title::before{
 
 
 .nav-aside{
-  position: fixed;
-  top: 100px;
+  position: absolute;
+  top: 1500px;
   right: 50px;
   width: 149px;
   height: 332px;
@@ -653,8 +653,11 @@ h3.h3-title::before{
       height: 35px;
       &.first-line{
         height: 52px;
-        td{
+        td:first-of-type{
           border-radius: 25px 0 0 0;
+        }
+        td:last-of-type{
+          border-radius:0 25px 0 0;
         }
       }
     }
@@ -1550,11 +1553,15 @@ h3.h3-title::before{
         top:0;
         background: rgba(0,0,0,0.3);
         border: none;
+        width: 1.5em;
+        text-align: center;
+        font-size: 20px;
+        z-index: 10;
         &.btn-scroll-left{
-          left:-10px;
+          left:0px;
         }
         &.btn-scroll-right{
-          right:-10px;
+          right:0px;
         }
       }
     }
@@ -1735,6 +1742,8 @@ h3.h3-title::before{
     }
   }
 }
+
+//factory-content.html
 .factory-content-main{
   border: 1px solid #ccc;
   margin:15px auto;
@@ -1882,6 +1891,91 @@ h3.h3-title::before{
     }
     img{
       width: 100%;
+    }
+  }
+}
+
+//resource-rank.html
+.resource-rank-main {
+  padding-top: 20px;
+  .src-tomorrow-star {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .resource-tomorrow-btn {
+      position: absolute;
+      right: 20%;
+      bottom: 10%;
+      width: 200px;
+      border:none;
+      background: #eb6100;
+      color: white;
+      padding:10px 0 5px 5px;
+      box-shadow: 2px 2px 2px black;
+      b {
+        font-size: 16px;
+        line-height: 16px;
+        float: left;
+      }
+      i {
+        font-size: 30px;
+        line-height: 32px;
+      }
+      img {
+        width: 41px;
+        height: 38px;
+        vertical-align: text-bottom;
+        position: relative;
+        top: 2px;
+        left: 2px;
+        animation: click 0.5s infinite alternate;
+      }
+      @keyframes click {
+        from {
+          top: 5px;
+        }
+        to {
+          top: 0;
+        }
+      }
+    }
+  }
+  .src-rank-list{
+    margin:30px 0;
+    padding-top: 20px;
+    border-top:1px solid #ccc ;
+    .src-rank-card{
+      position: relative;
+      margin-bottom: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      img{
+        height: 350px;
+        &:first-of-type{
+          width: 657px;
+        }
+      }
+      span{
+        position: absolute;
+        left:660px;
+        top:50px;
+        font-size: 60px;
+        color:white;
+        transform: rotate(-40deg);
+      }
+    }
+  }
+  .src-rank-new{
+    border-top:2px solid #ec6f3a;
+    &>p{
+      color: #ec6f3a;
+      font-size: 20px;
+      line-height:30px;
+      margin-bottom: 10px;
+    }
+    .member-card{
+      .member-block .member-card;
     }
   }
 }

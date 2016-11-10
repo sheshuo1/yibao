@@ -97,27 +97,16 @@
     </div>
     <div class="news-pic-nav">
         <div class="news-pic-nav-scroll">
-            <button class="btn-scroll-left">
+            <button class="btn-scroll-left" id="btn-scroll-left">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
             </button>
-            <button class="btn-scroll-right">
+            <button class="btn-scroll-right" id="btn-scroll-right">
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
             </button>
             <div class="news-pic-nav-border">
                 <div class="news-pic-nav-box">
-                    <img src="images/图层-7.jpg" alt="">
-                    <img src="images/图层-7.jpg" alt="">
-                    <img src="images/图层-7.jpg" alt="">
-                    <img src="images/图层-7.jpg" alt="">
-                    <img src="images/图层-7.jpg" alt="">
-                    <img src="images/图层-7.jpg" alt="">
-                    <img src="images/图层-7.jpg" alt="">
-                    <img src="images/图层-7.jpg" alt="">
-                    <img src="images/图层-7.jpg" alt="">
-                    <img src="images/图层-7.jpg" alt="">
-                    <img src="images/图层-7.jpg" alt="">
                     <img src="images/图层-7.jpg" alt="">
                     <img src="images/图层-7.jpg" alt="">
                     <img src="images/图层-7.jpg" alt="">
@@ -199,7 +188,14 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
 <script>
-
+    $(function () {
+        $('#btn-scroll-right').on('click', function () {
+            app.clickScroll($('.news-pic-nav-box'), -50);
+        });
+        $('#btn-scroll-left').on('click', function () {
+            app.clickScroll($('.news-pic-nav-box'), 50);
+        });
+    });
 </script>
 </body>
 </html>

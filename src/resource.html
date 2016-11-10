@@ -769,28 +769,28 @@
 <aside class="nav-aside">
     <table>
         <tr class="first-line">
-            <td><a href="#mote">模特</a></td>
-            <td><a href="#geshou">歌手</a></td>
+            <td id="mote-dot"><a href="#mote">模特</a></td>
+            <td id="geshou-dot"><a href="#geshou">歌手</a></td>
         </tr>
         <tr>
-            <td><a href="#yueshi">乐师</a></td>
-            <td><a href="#wuzhe">舞者</a></td>
+            <td id="yueshi-dot"><a href="#yueshi">乐师</a></td>
+            <td id="wuzhe-dot"><a href="#wuzhe">舞者</a></td>
         </tr>
         <tr>
-            <td><a href="#zhuchiren">主持人</a></td>
-            <td><a href="#daoyan">导演</a></td>
+            <td id="zhuchiren-dot"><a href="#zhuchiren">主持人</a></td>
+            <td id="daoyan-dot"><a href="#daoyan">导演</a></td>
         </tr>
         <tr>
-            <td><a href="#teji">特技</a></td>
-            <td><a href="#xiaopin">小品</a></td>
+            <td id="teji-dot"><a href="#teji">特技</a></td>
+            <td id="xiaopin-dot"><a href="#xiaopin">小品</a></td>
         </tr>
         <tr>
-            <td><a href="#zuociqu">作词曲</a></td>
-            <td><a href="#xiqu">戏曲</a></td>
+            <td id="zuociqu-dot"><a href="#zuociqu">作词曲</a></td>
+            <td id="xiqu-dot"><a href="#xiqu">戏曲</a></td>
         </tr>
         <tr>
-            <td><a href="#cehua">策划</a></td>
-            <td><a href="#jingjiren">经纪人</a></td>
+            <td id="cehua-dot"><a href="#cehua">策划</a></td>
+            <td id="jingjiren-dot"><a href="#jingjiren">经纪人</a></td>
         </tr>
     </table>
     <button>更多</button>
@@ -806,6 +806,11 @@
         setTimeout(function () {
             app.scrollTextUp('#src-work-scroll', {contair: 'ol', inner: 'li', number: 5, delay: 2000});
         },1000);
+
+        document.addEventListener('scroll',function () {
+            app.scrollFixed(1400,100);
+            app.watchScroll('.member-block h1');
+        })
     });
 </script>
 </body>
