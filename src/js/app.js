@@ -88,12 +88,12 @@ app.scrollTo=function (query) {
     console.log(target_top+';'+now_top+';'+scroll);
     var i=setInterval(function () {
         var now_scroll=window.scrollY||window.pageYOffset;
-        if(scroll>0&&window.scrollY>=target_top||(now_scroll+client_height==sum_height)){
+        if((scroll>0&&window.scrollY>=target_top)||(scroll>0&&now_scroll+client_height==sum_height)){
             clearInterval(i);
         }
         if(scroll<=0&&window.scrollY<=target_top){
             clearInterval(i);
         }
-        window.scrollBy(0,scroll/60);
+        window.scrollBy(0,scroll/20);
     },1000/60);
 };

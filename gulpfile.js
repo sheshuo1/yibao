@@ -29,7 +29,7 @@ var cssSrc = 'src/css/*.css',
 
 
 //自动刷新页面
-gulp.task('reload',['less'],function() {
+gulp.task('reload',function() {
     livereload.reload();
 });
 

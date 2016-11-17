@@ -1411,7 +1411,7 @@ h3.h3-title::before{
   }
 }
 
-//search-resource.html
+//resource-list.html
 .search-resource-main{
   .search-choose-area{
     width: 100%;
@@ -1976,6 +1976,116 @@ h3.h3-title::before{
     }
     .member-card{
       .member-block .member-card;
+    }
+  }
+}
+
+//factory-need-list.html
+.factory-need-list-main{
+  .factory-need-list-searchbar{
+    margin:20px 0;
+    font-size: 18px;
+    line-height: 32px;
+    span{
+      border: 1px dashed #aaa;
+      padding:3px;
+    }
+    input[type="text"]{
+      width: 150px;
+      border: 2px solid #ccc;
+      background: none;
+    }
+    input[type="submit"]{
+      vertical-align: bottom;
+      width: 32px;
+      border: 2px solid #ccc;
+      border-left:none ;
+      background:#eee url("../images/search.png") no-repeat center;
+    }
+  }
+  .factory-need-list-left{
+    width: 750px;
+    padding:0 5px 0 0;
+    .search-choose-area{
+      .search-resource-main .search-choose-area;
+      button.selected{
+        background: linear-gradient(#ffbc6d,#ec6f3a);
+        border-color: #ec6941;
+      }
+    }
+    .factory-list-area{
+      .factory-list-main .factory-list-area;
+      .factory-item-card {
+        table-layout:fixed;
+        text-align: center;
+        color: #969696;
+        p {
+          margin-bottom: 15px;
+        }
+        b {
+          color: #ec6f3a;
+        }
+        .factory-item-title {
+            width: 375px;
+            & > p:first-of-type {
+              font-size: 16px;
+              color: black;
+            }
+            & > p {
+              width: 375px;
+              .text-ellipsis;
+              text-align: left;
+            }
+
+        }
+        .factory-item-status {
+          width: 125px;
+        }
+        .factory-item-info {
+          width: 125px;
+        }
+        .factory-item-time {
+          width: 125px;
+        }
+      }
+    }
+  }
+  .factory-need-list-right{
+    width: 210px;
+    margin:20px 0;
+    border: 1px solid #ccc;
+    padding:0;
+    .factory-need-hot-list{
+      padding:0 15px;
+      border-bottom: 1px solid #ccc;
+      h1{
+        font-size: 19px;
+      }
+    }
+    .factory-need-hot-card{
+      padding:10px;
+      img{
+        width: 100%;
+      }
+      .factory-need-card-title{
+        background: #eee;
+        padding-left:5px;
+        b {
+          color: #ec6f3a;
+        }
+        i{
+          font-style: normal;
+          color: white;
+          border-radius: 3px;
+          padding:0 3px;
+          &.success-flag{
+            background: #ec6f3a;
+          }
+          &.progress-flag{
+            background: #0a865f;
+          }
+        }
+      }
     }
   }
 }

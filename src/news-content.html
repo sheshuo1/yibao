@@ -107,11 +107,11 @@
             </button>
             <div class="news-pic-nav-border">
                 <div class="news-pic-nav-box">
-                    <img src="images/图层-7.jpg" alt="">
-                    <img src="images/图层-7.jpg" alt="">
-                    <img src="images/图层-7.jpg" alt="">
-                    <img src="images/图层-7.jpg" alt="">
-                    <img src="images/图层-7.jpg" alt="">
+                    <a href="javascript:$('#news-main-carousel').carousel(0);"><img src="images/图层-7.jpg" alt=""></a>
+                    <a href="javascript:$('#news-main-carousel').carousel(1);"><img src="images/图层-7.jpg" alt=""></a>
+                    <a href="javascript:$('#news-main-carousel').carousel(2);"><img src="images/图层-7.jpg" alt=""></a>
+                    <a href="javascript:$('#news-main-carousel').carousel(3);"><img src="images/图层-7.jpg" alt=""></a>
+                    <a href="javascript:$('#news-main-carousel').carousel(4);"><img src="images/图层-7.jpg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -195,6 +195,23 @@
         $('#btn-scroll-left').on('click', function () {
             app.clickScroll($('.news-pic-nav-box'), 50);
         });
+        $('body').on('keyup',function (event) {
+            var e = event || window.event;
+            var keyCode = e.keyCode || e.which;
+            var $caroousel=$("#news-main-carousel");
+            switch (keyCode) {
+                case 37:
+                    $caroousel.carousel('prev');
+                    console.log('1');
+                    break;
+                case 39:
+                    $caroousel.carousel('next');
+                    console.log('2');
+                    break;
+                default:
+                    break;
+            }
+        })
     });
 </script>
 </body>
