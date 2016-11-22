@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="renderer" content="webkit">
-    <title>搜索结果--演艺资源--艺宝网</title>
+    <title>票务列表--票务整合--艺宝网</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet/less" type="text/css" href="css/main.less">
+    <script src="js/less.min.js"></script>
     <!--[if lt IE 9]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -51,138 +52,224 @@
         </ul>
     </nav>
 </header>
-<main class="box search-resource-main">
+<main class="box ticket-list-main container-fluid">
     <table class="search-choose-area">
         <tr>
-            <td class="tr-title">地　　区:</td>
+            <td class="tr-title">城市:</td>
             <td class="choose-all"><button class="selected">全部</button></td>
             <td class="choose-item"><button class="selected">南宁市</button><button>柳州市</button><button>桂林市</button><button>梧州市</button><button>北海市</button><button>防城港市</button><button>钦州市</button><button>贵港市</button><button>玉林市</button><button>玉林市</button><button>玉林市</button><button>玉林市</button><button>玉林市</button><button>玉林市</button></td>
         </tr>
         <tr>
-            <td class="tr-title">身　　高:</td>
-            <td class="choose-all"><button>不限</button></td>
-            <td class="choose-item"><button class="selected">155+</button><button>160+</button><button>165+</button><button>168+</button><button>170+</button><button>175+</button><button>180+</button><button>185+</button></td>
+            <td class="tr-title">类型:</td>
+            <td class="choose-all"><button>全部</button></td>
+            <td class="choose-item"><button class="selected">演唱会</button><button>音乐会</button><button>话剧歌剧</button><button>舞蹈芭蕾</button><button>曲苑杂坛</button><button>体育比赛</button></td>
         </tr>
         <tr>
-            <td class="tr-title">性　　别:</td>
-            <td class="choose-all"><button>不限</button></td>
-            <td class="choose-item"><button class="selected">女</button><button>男</button></td>
+            <td class="tr-title">子类:</td>
+            <td class="choose-all"><button>全部</button></td>
+            <td class="choose-item"><button class="selected">流行</button><button>摇滚</button><button>民族</button><button>通俗</button><button>其他</button></td>
         </tr>
         <tr>
-            <td class="tr-title">职业类型:</td>
+            <td class="tr-title">时间:</td>
             <td class="choose-all"><button class="selected">全部</button></td>
-            <td class="choose-item"><button>模特</button><button>歌手</button><button>乐师</button><button>舞者</button><button>主持人</button><button>导演</button><button>特技</button><button>小品</button><button>作词曲</button><button>戏曲</button><button>策划</button><button>经纪人</button></td>
+            <td class="choose-item"><button>今天</button><button>明天</button><button>一周内</button><button>一月内</button><button>其他</button></td>
+        </tr>
+        <tr>
+            <td class="tr-title">费用:</td>
+            <td class="choose-all"><button class="selected">全部</button></td>
+            <td class="choose-item"><button>100元以下</button><button>101-300元</button><button>301-500元</button><button>500元以上</button></td>
         </tr>
     </table>
-    <div class="choose-search-line">
-        <input type="text" placeholder="请输入关键词" class="choose-search-input"><span></span>排序：<button class="active">按热门</button><button>按更新</button><button>按时间</button>
-    </div>
+    <div class="row">
+        <div class="col-xs-9 ticket-list-left">
+            <div class="ticket-list-tips">
+                <p class="ticket-list-condition">您已选择的搜索条件：所有商品>演唱会></p>
+                <p class="ticket-list-style">显示方式：<button>图文模式</button> | <button>列表模式</button></p>
+            </div>
+            <p class="ticket-list-sort">排序：
+                <button>按热门(hot)</button>
+                <button>按更新</button>
+                <button>按时间</button>
+                筛选：
+                <select>
+                    <option>全部商品</option>
+                </select>
+            </p>
+            <div class="ticket-list-card-area">
+                <section class="ticket-list-card">
+                    <img src="images/ticket-cover%20(1).png" alt="img">
+                    <div class="ticket-list-card-info">
+                        <p class="ticket-list-card-title">2015周杰伦摩天轮2世界巡回演唱会 济南站</p>
+                        <p>周杰伦是2000年后亚洲流行乐坛最具革命性创作歌手周杰伦是2000年后亚洲流行乐坛最具革命性创作歌手</p>
+                        <p>时间：2015.06.15       场馆：<b>济南奥体中心体育场</b></p>
+                        <p>票价：280，580，780，1280，1680</p>
+                        <p>状态：销售中</p>
+                        <p><span>在线选座</span> | <span>电子票</span></p>
+                    </div>
+                    <p class="ticket-list-card-btn">
+                        <button><img src="images/btn-buy.png" alt="立即购买"></button>
+                        <button><img src="images/btn-favorite_14.png" alt="添加收藏"></button>
+                    </p>
+                </section>
+                <section class="ticket-list-card">
+                    <img src="images/ticket-cover%20(2).png" alt="img">
+                    <div class="ticket-list-card-info">
+                        <p class="ticket-list-card-title">2015周杰伦摩天轮2世界巡回演唱会 济南站</p>
+                        <p>周杰伦是2000年后亚洲流行乐坛最具革命性创作歌手周杰伦是2000年后亚洲流行乐坛最具革命性创作歌手</p>
+                        <p>时间：2015.06.15       场馆：<b>济南奥体中心体育场</b></p>
+                        <p>票价：280，580，780，1280，1680</p>
+                        <p>状态：销售中</p>
+                        <p><span>在线选座</span> | <span>电子票</span></p>
+                    </div>
+                    <p class="ticket-list-card-btn">
+                        <button><img src="images/btn-buy.png" alt="立即购买"></button>
+                        <button><img src="images/btn-favorite_14.png" alt="添加收藏"></button>
+                    </p>
+                </section>
+                <section class="ticket-list-card">
+                    <img src="images/ticket-cover%20(3).png" alt="img">
+                    <div class="ticket-list-card-info">
+                        <p class="ticket-list-card-title">2015周杰伦摩天轮2世界巡回演唱会 济南站</p>
+                        <p>周杰伦是2000年后亚洲流行乐坛最具革命性创作歌手周杰伦是2000年后亚洲流行乐坛最具革命性创作歌手</p>
+                        <p>时间：2015.06.15       场馆：<b>济南奥体中心体育场</b></p>
+                        <p>票价：280，580，780，1280，1680</p>
+                        <p>状态：销售中</p>
+                        <p><span>在线选座</span> | <span>电子票</span></p>
+                    </div>
+                    <p class="ticket-list-card-btn">
+                        <button><img src="images/btn-buy.png" alt="立即购买"></button>
+                        <button><img src="images/btn-favorite_14.png" alt="添加收藏"></button>
+                    </p>
+                </section>
+                <section class="ticket-list-card">
+                    <img src="images/ticket-cover%20(4).png" alt="img">
+                    <div class="ticket-list-card-info">
+                        <p class="ticket-list-card-title">2015周杰伦摩天轮2世界巡回演唱会 济南站</p>
+                        <p>周杰伦是2000年后亚洲流行乐坛最具革命性创作歌手周杰伦是2000年后亚洲流行乐坛最具革命性创作歌手</p>
+                        <p>时间：2015.06.15       场馆：<b>济南奥体中心体育场</b></p>
+                        <p>票价：280，580，780，1280，1680</p>
+                        <p>状态：销售中</p>
+                        <p><span>在线选座</span> | <span>电子票</span></p>
+                    </div>
+                    <p class="ticket-list-card-btn">
+                        <button><img src="images/btn-buy.png" alt="立即购买"></button>
+                        <button><img src="images/btn-favorite_14.png" alt="添加收藏"></button>
+                    </p>
+                </section>
+                <section class="ticket-list-card">
+                    <img src="images/ticket-cover%20(5).png" alt="img">
+                    <div class="ticket-list-card-info">
+                        <p class="ticket-list-card-title">2015周杰伦摩天轮2世界巡回演唱会 济南站</p>
+                        <p>周杰伦是2000年后亚洲流行乐坛最具革命性创作歌手周杰伦是2000年后亚洲流行乐坛最具革命性创作歌手</p>
+                        <p>时间：2015.06.15       场馆：<b>济南奥体中心体育场</b></p>
+                        <p>票价：280，580，780，1280，1680</p>
+                        <p>状态：销售中</p>
+                        <p><span>在线选座</span> | <span>电子票</span></p>
+                    </div>
+                    <p class="ticket-list-card-btn">
+                        <button><img src="images/btn-buy.png" alt="立即购买"></button>
+                        <button><img src="images/btn-favorite_14.png" alt="添加收藏"></button>
+                    </p>
+                </section>
+                <section class="ticket-list-card">
+                    <img src="images/ticket-cover%20(6).png" alt="img">
+                    <div class="ticket-list-card-info">
+                        <p class="ticket-list-card-title">2015周杰伦摩天轮2世界巡回演唱会 济南站</p>
+                        <p>周杰伦是2000年后亚洲流行乐坛最具革命性创作歌手周杰伦是2000年后亚洲流行乐坛最具革命性创作歌手</p>
+                        <p>时间：2015.06.15       场馆：<b>济南奥体中心体育场</b></p>
+                        <p>票价：280，580，780，1280，1680</p>
+                        <p>状态：销售中</p>
+                        <p><span>在线选座</span> | <span>电子票</span></p>
+                    </div>
+                    <p class="ticket-list-card-btn">
+                        <button><img src="images/btn-buy.png" alt="立即购买"></button>
+                        <button><img src="images/btn-favorite_14.png" alt="添加收藏"></button>
+                    </p>
+                </section>
 
-    <div class="container-fluid search-list">
-        <div class="row">
-            <div class="member-card col-xs-3">
-                <img src="images/img2_cover_10190050.jpg" alt="img">
-                <div class="member-card-info">
-                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
-                    <p>职业\<span>模特</span></p>
-                    <p>点击量\<span>38000</span></p>
-                </div>
-            </div>
-            <div class="member-card col-xs-3">
-                <img src="images/img2_cover_10207893.jpg" alt="img">
-                <div class="member-card-info">
-                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
-                    <p>职业\<span>模特</span></p>
-                    <p>点击量\<span>38000</span></p>
-                </div>
-            </div>
-            <div class="member-card col-xs-3">
-                <img src="images/img2_src_10142192.jpg" alt="img">
-                <div class="member-card-info">
-                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
-                    <p>职业\<span>模特</span></p>
-                    <p>点击量\<span>38000</span></p>
-                </div>
-            </div>
-            <div class="member-card col-xs-3">
-                <img src="images/img2_src_10164066.jpg" alt="img">
-                <div class="member-card-info">
-                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
-                    <p>职业\<span>模特</span></p>
-                    <p>点击量\<span>38000</span></p>
-                </div>
-            </div>
-            <div class="member-card col-xs-3">
-                <img src="images/img2_src_10093314.jpg" alt="img">
-                <div class="member-card-info">
-                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
-                    <p>职业\<span>模特</span></p>
-                    <p>点击量\<span>38000</span></p>
-                </div>
-            </div>
-            <div class="member-card col-xs-3">
-                <img src="images/img2_src_10093315.jpg" alt="img">
-                <div class="member-card-info">
-                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
-                    <p>职业\<span>模特</span></p>
-                    <p>点击量\<span>38000</span></p>
-                </div>
-            </div>
-            <div class="member-card col-xs-3">
-                <img src="images/img2_src_10141002.jpg" alt="img">
-                <div class="member-card-info">
-                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
-                    <p>职业\<span>模特</span></p>
-                    <p>点击量\<span>38000</span></p>
-                </div>
-            </div>
-            <div class="member-card col-xs-3">
-                <img src="images/img2_src_10140967.jpg" alt="img">
-                <div class="member-card-info">
-                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
-                    <p>职业\<span>模特</span></p>
-                    <p>点击量\<span>38000</span></p>
-                </div>
-            </div>
-            <div class="member-card col-xs-3">
-                <img src="images/14095R591I.jpg" alt="img">
-                <div class="member-card-info">
-                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
-                    <p>职业\<span>模特</span></p>
-                    <p>点击量\<span>38000</span></p>
-                </div>
-            </div>
-            <div class="member-card col-xs-3">
-                <img src="images/Mypsd_13872_201304071542550158B.jpg" alt="img">
-                <div class="member-card-info">
-                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
-                    <p>职业\<span>模特</span></p>
-                    <p>点击量\<span>38000</span></p>
-                </div>
-            </div>
-            <div class="member-card col-xs-3">
-                <img src="images/Mypsd_13872_201304071542550002B.jpg" alt="img">
-                <div class="member-card-info">
-                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
-                    <p>职业\<span>模特</span></p>
-                    <p>点击量\<span>38000</span></p>
-                </div>
-            </div>
-            <div class="member-card col-xs-3">
-                <img src="images/20120701093800953726.jpg" alt="img">
-                <div class="member-card-info">
-                    <p>发布人\<span>艾米</span><span class="icon-1"></span><span class="icon-2"></span></p>
-                    <p>职业\<span>模特</span></p>
-                    <p>点击量\<span>38000</span></p>
-                </div>
             </div>
         </div>
+        <div class="col-xs-3 ticket-list-right">
+            <section class="ticket-list-right-item">
+                <h1>票票堂</h1>
+                团购：
+                <img class="img-cover" src="images/zsfdva_06.jpg" alt="img">
+                <p>【全国·30城市】电影《热情奏鸣曲》单人2D电子票15III</p>
+                <p><del>￥80.00</del> ￥15.00</p>
+                <p>活动数量：200件</p>
+                <p>秒杀时间：2015-2-4 15:00:00</p>
+                <img class="inline" src="images/ticket-cover%20(1).png" alt="img">
+                <img class="inline" src="images/ticket-cover%20(2).png" alt="img">
+                <img class="inline" src="images/ticket-cover%20(3).png" alt="img">
+                <img class="inline" src="images/ticket-cover%20(4).png" alt="img">
+            </section>
+            <section class="ticket-list-right-item">
+                <h1>热推项目</h1>
+                <div class="ticket-list-right-card">
+                    <img src="images/zsfdva_13.jpg" alt="img">
+                    <p>德云社北京相声大会——天桥德云社剧场</p>
+                    <p>时间：常年</p>
+                    <p>票价：<i>20</i>元起</p>
+                </div>
+                <p class="item-list"><i>2</i> 德云社北京相声大会——三里屯德云社开唱</p>
+                <p class="item-list"><i>3</i> 德云社北京相声大会——三里屯德云社开唱</p>
+                <p class="item-list"><i>4</i> 德云社北京相声大会——三里屯德云社开唱</p>
+                <p class="item-list"><i>5</i> 德云社北京相声大会——三里屯德云社开唱</p>
+            </section>
+            <section class="ticket-list-right-item">
+                <h1>品牌场地</h1>
+                <div class="ticket-list-right-area">
+                    <img src="images/qwer_01.jpg" alt="img">
+                    <p><i>明星剧场</i></p>
+                    <p>地区：南宁市 兴宁区</p>
+                    <p>剧种：歌剧\话剧\京剧\桂剧</p>
+                </div>
+                <div class="ticket-list-right-area">
+                    <img src="images/qwer_05.jpg" alt="img">
+                    <p><i>南宁剧场</i></p>
+                    <p>地区：南宁市 青秀区</p>
+                    <p>剧种：</p>
+                </div>
+                <div class="ticket-list-right-area">
+                    <img src="images/qwer_09.jpg" alt="img">
+                    <p><i>南宁少儿剧院</i></p>
+                    <p>地区：南宁市 兴宁区</p>
+                    <p>剧种：歌剧\话剧\京剧\桂剧</p>
+                </div>
+                <div class="ticket-list-right-area">
+                    <img src="images/qwer_13.jpg" alt="img">
+                    <p><i>南宁艺术剧院</i></p>
+                    <p>地区：南宁市 兴宁区</p>
+                    <p>剧种：歌剧\话剧\京剧\桂剧</p>
+                </div>
+                <div class="ticket-list-right-area">
+                    <img src="images/qwer_17.jpg" alt="img">
+                    <p><i>刘三姐艺术剧院</i></p>
+                    <p>地区：南宁市 兴宁区</p>
+                    <p>剧种：歌剧\话剧\京剧\桂剧</p>
+                </div>
+
+            </section>
+        </div>
     </div>
+
+
 </main>
+
 <script src="js/jquery-1.10.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
+    $(function () {
+        $('.search-choose-area .choose-item button').on('click',function () {
+            $(this).addClass('selected');
+            $(this).siblings('button').add($(this).parent().parent().find('.choose-all button')).removeClass('selected');
 
+        });
+        $('.search-choose-area .choose-all button').on('click',function () {
+            $(this).addClass('selected');
+            $(this).parent().parent().find('.choose-item button').removeClass('selected');
+        });
+    });
 </script>
 </body>
 </html>
