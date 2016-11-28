@@ -1841,12 +1841,14 @@ h3.h3-title::before{
     h2{
       font-size: 22px;
       font-weight: 700;
+      padding-left: 10px;
     }
     span{
       font-size: 20px;
     }
     p{
       font-size: 22px;
+      padding-left: 10px;
     }
     a{
       color:blue;
@@ -1875,6 +1877,7 @@ h3.h3-title::before{
     }
   }
   .factory-content-document{
+    padding-bottom: 50px;
     h1{
       overflow: hidden;
       white-space: nowrap;
@@ -1889,8 +1892,54 @@ h3.h3-title::before{
         vertical-align: middle;
       }
     }
-    img{
-      width: 100%;
+    .factory-content-document-card{
+      img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        float: left;
+        margin-right: 10px;
+        border: 5px solid white;
+      }
+      p{
+        margin-bottom: 0;
+      }
+      .factory-content-document-name{
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .factory-content-document-grade{
+        font-size: 12px;
+        color: #969696;
+        span{
+          color:orange;
+        }
+      }
+      .factory-content-document-info{
+        border: 1px solid #ccc;
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        top:-10px;
+        z-index: -1;
+        h2{
+          font-size: 12px;
+          font-weight: 700;
+          &:before{
+            content: "";
+            display: inline-block;
+            width: 3px;
+            height: 1em;
+            margin-right: 5px;
+            background: orange;
+          }
+        }
+        p{
+          padding:0 1em;
+          font-size: 12px;
+        }
+      }
     }
   }
 }

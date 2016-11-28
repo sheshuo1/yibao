@@ -4,8 +4,7 @@
     <list default="true" id="e52401b9-9489-4fb0-867a-b089e44f5e3a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/main.less" afterPath="$PROJECT_DIR$/src/css/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/factory-need-list.html" afterPath="$PROJECT_DIR$/src/factory-need-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ticket-list.html" afterPath="$PROJECT_DIR$/src/ticket-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/factory-content.html" afterPath="$PROJECT_DIR$/src/factory-content.html" />
     </list>
     <ignored path="NewProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,11 +66,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ticket-list.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="factory-content.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/factory-content.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="526">
+                  <caret line="133" column="7" lean-forward="false" selection-start-line="133" selection-start-column="7" selection-end-line="133" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ticket-list.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ticket-list.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+                <state relative-caret-position="4116">
+                  <caret line="196" column="5" lean-forward="false" selection-start-line="196" selection-start-column="5" selection-end-line="196" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -94,8 +103,8 @@
           <file leaf-file-name="main.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/css/main.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="350">
-                  <caret line="2210" column="26" lean-forward="false" selection-start-line="2210" selection-start-column="26" selection-end-line="2210" selection-end-column="26" />
+                <state relative-caret-position="714">
+                  <caret line="1850" column="18" lean-forward="false" selection-start-line="1850" selection-start-column="18" selection-end-line="1850" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -118,6 +127,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>search-choose-area</find>
+      <find>factory-con</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/search-resource.html" />
         <option value="$PROJECT_DIR$/src/factory.html" />
         <option value="$PROJECT_DIR$/src/factory-list.html" />
-        <option value="$PROJECT_DIR$/src/factory-content.html" />
         <option value="$PROJECT_DIR$/src/css/main.css" />
         <option value="$PROJECT_DIR$/watch.bat" />
         <option value="$PROJECT_DIR$/src/resource.html" />
@@ -177,6 +186,7 @@
         <option value="$PROJECT_DIR$/src/factory-need-list.html" />
         <option value="$PROJECT_DIR$/src/ticket-list.html" />
         <option value="$PROJECT_DIR$/src/css/main.less" />
+        <option value="$PROJECT_DIR$/src/factory-content.html" />
       </list>
     </option>
   </component>
@@ -281,7 +291,7 @@
     <ConfirmationsSetting value="2" id="添加" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -294,7 +304,38 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yibao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yibao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yibao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yibao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
@@ -436,12 +477,16 @@
       <workItem from="1479694520943" duration="2137000" />
       <workItem from="1479779760810" duration="65000" />
       <workItem from="1479781071860" duration="602000" />
-      <workItem from="1479795782077" duration="5005000" />
+      <workItem from="1479795782077" duration="5614000" />
+      <workItem from="1479862289923" duration="1229000" />
+      <workItem from="1479883198193" duration="2720000" />
+      <workItem from="1480042773509" duration="599000" />
+      <workItem from="1480296161945" duration="769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201820000" />
+    <option name="totallyTimeSpent" value="207746000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -581,13 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/factory-content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="85" column="33" lean-forward="true" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -632,14 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/news-content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/factory-need-list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -658,16 +688,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ticket-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+        <state relative-caret-position="4116">
+          <caret line="196" column="5" lean-forward="false" selection-start-line="196" selection-start-column="5" selection-end-line="196" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/news-content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="2210" column="26" lean-forward="false" selection-start-line="2210" selection-start-column="26" selection-end-line="2210" selection-end-column="26" />
+        <state relative-caret-position="714">
+          <caret line="1850" column="18" lean-forward="false" selection-start-line="1850" selection-start-column="18" selection-end-line="1850" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/factory-content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="133" column="7" lean-forward="false" selection-start-line="133" selection-start-column="7" selection-end-line="133" selection-end-column="7" />
           <folding />
         </state>
       </provider>
