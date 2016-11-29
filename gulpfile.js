@@ -39,6 +39,13 @@ gulp.task('watch', function() {
   gulp.watch('**/*.*', ['reload']);
 });
 
+
+//监听文件变动
+gulp.task('watch-less', function() {
+    livereload.listen();
+    gulp.watch('**/*.*', ['less','reload']);
+});
+
 //自动添加css前缀
 gulp.task('autofx', function () {
     gulp.src(cssSrc)

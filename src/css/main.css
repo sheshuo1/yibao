@@ -1602,7 +1602,7 @@ h3.h3-title::before {
   white-space: nowrap;
 }
 .news-content-main .news-pic-nav .news-pic-nav-scroll .news-pic-nav-border .news-pic-nav-box img {
-  padding: 0 5px;
+  padding: 10px;
   max-height: 100px;
 }
 .news-content-main .news-pic-nav .news-pic-nav-scroll button {
@@ -1617,10 +1617,12 @@ h3.h3-title::before {
   z-index: 10;
 }
 .news-content-main .news-pic-nav .news-pic-nav-scroll button.btn-scroll-left {
-  left: 0px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  left: -10px;
 }
 .news-content-main .news-pic-nav .news-pic-nav-scroll button.btn-scroll-right {
-  right: 0px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  right: -10px;
 }
 .news-content-main .news-pic-nav .news-pre-link,
 .news-content-main .news-pic-nav .news-next-link {
@@ -1629,6 +1631,29 @@ h3.h3-title::before {
   overflow: hidden;
   position: absolute;
   top: 0;
+  cursor: pointer;
+}
+.news-content-main .news-pic-nav .news-pre-link:after,
+.news-content-main .news-pic-nav .news-next-link:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+.news-content-main .news-pic-nav .news-pre-link:hover:after,
+.news-content-main .news-pic-nav .news-next-link:hover:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0);
 }
 .news-content-main .news-pic-nav .news-pre-link.news-pre-link,
 .news-content-main .news-pic-nav .news-next-link.news-pre-link {
@@ -1927,12 +1952,14 @@ h3.h3-title::before {
 .factory-content-main .factory-content-description h2 {
   font-size: 22px;
   font-weight: 700;
+  padding-left: 10px;
 }
 .factory-content-main .factory-content-description span {
   font-size: 20px;
 }
 .factory-content-main .factory-content-description p {
   font-size: 22px;
+  padding-left: 10px;
 }
 .factory-content-main .factory-content-description a {
   color: blue;
@@ -1958,6 +1985,9 @@ h3.h3-title::before {
   border: 1px solid orange;
   padding: 5px 10px;
   color: white;
+}
+.factory-content-main .factory-content-document {
+  padding-bottom: 50px;
 }
 .factory-content-main .factory-content-document h1 {
   overflow: hidden;
@@ -1985,8 +2015,52 @@ h3.h3-title::before {
   margin-left: 0.5em;
   vertical-align: middle;
 }
-.factory-content-main .factory-content-document img {
+.factory-content-main .factory-content-document .factory-content-document-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  float: left;
+  margin-right: 10px;
+  border: 5px solid white;
+}
+.factory-content-main .factory-content-document .factory-content-document-card p {
+  margin-bottom: 0;
+}
+.factory-content-main .factory-content-document .factory-content-document-card .factory-content-document-name {
+  font-size: 14px;
+  font-weight: 700;
+}
+.factory-content-main .factory-content-document .factory-content-document-card .factory-content-document-grade {
+  font-size: 12px;
+  color: #969696;
+}
+.factory-content-main .factory-content-document .factory-content-document-card .factory-content-document-grade span {
+  color: orange;
+}
+.factory-content-main .factory-content-document .factory-content-document-card .factory-content-document-info {
+  border: 1px solid #ccc;
+  height: 200px;
   width: 100%;
+  overflow: hidden;
+  position: relative;
+  top: -10px;
+  z-index: -1;
+}
+.factory-content-main .factory-content-document .factory-content-document-card .factory-content-document-info h2 {
+  font-size: 12px;
+  font-weight: 700;
+}
+.factory-content-main .factory-content-document .factory-content-document-card .factory-content-document-info h2:before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  margin-right: 5px;
+  background: orange;
+}
+.factory-content-main .factory-content-document .factory-content-document-card .factory-content-document-info p {
+  padding: 0 1em;
+  font-size: 12px;
 }
 .resource-rank-main {
   padding-top: 20px;
@@ -2102,4 +2176,388 @@ h3.h3-title::before {
   height: 1.5em;
   background: url("../images/ico_07.png") no-repeat center;
   background-size: 100% 100%;
+}
+.factory-need-list-main .factory-need-list-searchbar {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 32px;
+}
+.factory-need-list-main .factory-need-list-searchbar span {
+  border: 1px dashed #aaa;
+  padding: 3px;
+}
+.factory-need-list-main .factory-need-list-searchbar input[type="text"] {
+  width: 150px;
+  border: 2px solid #ccc;
+  background: none;
+}
+.factory-need-list-main .factory-need-list-searchbar input[type="submit"] {
+  vertical-align: bottom;
+  width: 32px;
+  border: 2px solid #ccc;
+  border-left: none ;
+  background: #eee url("../images/search.png") no-repeat center;
+}
+.factory-need-list-main .factory-need-list-left {
+  width: 750px;
+  padding: 0 5px 0 0;
+}
+.factory-need-list-main .factory-need-list-left .search-choose-area {
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+.factory-need-list-main .factory-need-list-left .search-choose-area button {
+  padding: 2px 5px;
+  margin: 5px 10px;
+  color: #a8a8a8;
+  background: none;
+  border: inset 1px transparent;
+}
+.factory-need-list-main .factory-need-list-left .search-choose-area button.selected {
+  background: #e95589;
+  border-color: #e95589;
+  color: white;
+}
+.factory-need-list-main .factory-need-list-left .search-choose-area .tr-title {
+  width: 6em;
+  vertical-align: text-top;
+  padding-left: 5px;
+}
+.factory-need-list-main .factory-need-list-left .search-choose-area .choose-all {
+  width: 5em;
+  vertical-align: text-top;
+}
+.factory-need-list-main .factory-need-list-left .search-choose-area button.selected {
+  background: linear-gradient(#ffbc6d, #ec6f3a);
+  border-color: #ec6941;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area {
+  margin: 20px 0;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-list-switch {
+  line-height: 34px;
+  border-bottom: 2px solid #b5b5b5;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-list-switch button {
+  border: none;
+  width: 94px;
+  background: #b5b5b5;
+  color: white;
+  margin: 0;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-list-switch button.active {
+  background: #ec6f3a;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card {
+  margin: 10px 0;
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card:hover {
+  background: #eee;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card p span {
+  color: #969696;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card p.factory-item-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card p.factory-item-title > span {
+  float: right;
+  font-size: 12px;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card p.factory-item-title > span > span {
+  color: #ec6f3a;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card p.factory-item-tags {
+  margin: 10px 0;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card p.factory-item-tags span {
+  padding: 0 5px;
+  margin: 0 5px;
+  border-radius: 5px;
+  color: white;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card p.factory-item-tags span.blue {
+  background: #00a0e9;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card p.factory-item-tags span.rosered {
+  background: #ff4699;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card p.factory-item-info {
+  padding-right: 200px;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card {
+  table-layout: fixed;
+  text-align: center;
+  color: #969696;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card p {
+  margin-bottom: 15px;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card b {
+  color: #ec6f3a;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card .factory-item-title {
+  width: 375px;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card .factory-item-title > p:first-of-type {
+  font-size: 16px;
+  color: black;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card .factory-item-title > p {
+  width: 375px;
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+  /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space: nowrap;
+  /* 不换行 */
+  text-align: left;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card .factory-item-status {
+  width: 125px;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card .factory-item-info {
+  width: 125px;
+}
+.factory-need-list-main .factory-need-list-left .factory-list-area .factory-item-card .factory-item-time {
+  width: 125px;
+}
+.factory-need-list-main .factory-need-list-right {
+  width: 210px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  padding: 0;
+}
+.factory-need-list-main .factory-need-list-right .factory-need-hot-list {
+  padding: 0 15px;
+  border-bottom: 1px solid #ccc;
+}
+.factory-need-list-main .factory-need-list-right .factory-need-hot-list h1 {
+  font-size: 19px;
+}
+.factory-need-list-main .factory-need-list-right .factory-need-hot-card {
+  padding: 10px;
+}
+.factory-need-list-main .factory-need-list-right .factory-need-hot-card img {
+  width: 100%;
+}
+.factory-need-list-main .factory-need-list-right .factory-need-hot-card .factory-need-card-title {
+  background: #eee;
+  padding-left: 5px;
+}
+.factory-need-list-main .factory-need-list-right .factory-need-hot-card .factory-need-card-title b {
+  color: #ec6f3a;
+}
+.factory-need-list-main .factory-need-list-right .factory-need-hot-card .factory-need-card-title i {
+  font-style: normal;
+  color: white;
+  border-radius: 3px;
+  padding: 0 3px;
+}
+.factory-need-list-main .factory-need-list-right .factory-need-hot-card .factory-need-card-title i.success-flag {
+  background: #ec6f3a;
+}
+.factory-need-list-main .factory-need-list-right .factory-need-hot-card .factory-need-card-title i.progress-flag {
+  background: #0a865f;
+}
+.ticket-list-main {
+  margin: 50px auto;
+}
+.ticket-list-main .search-choose-area {
+  margin: 0 -15px;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+.ticket-list-main .search-choose-area button {
+  padding: 2px 5px;
+  margin: 5px 10px;
+  color: #a8a8a8;
+  background: none;
+  border: inset 1px transparent;
+}
+.ticket-list-main .search-choose-area button.selected {
+  background: #e95589;
+  border-color: #e95589;
+  color: white;
+}
+.ticket-list-main .search-choose-area .tr-title {
+  width: 6em;
+  vertical-align: text-top;
+  padding-left: 5px;
+}
+.ticket-list-main .search-choose-area .choose-all {
+  width: 5em;
+  vertical-align: text-top;
+}
+.ticket-list-main .search-choose-area button.selected {
+  background: linear-gradient(#ffbc6d, #ec6f3a);
+  border-color: #ec6941;
+}
+.ticket-list-main .ticket-list-left {
+  width: 70%;
+  margin: 20px 0;
+  border: 1px solid #eee;
+}
+.ticket-list-main .ticket-list-left .ticket-list-tips {
+  border-bottom: 2px solid #eee;
+  overflow: auto;
+  margin-top: 10px;
+  color: #969696;
+}
+.ticket-list-main .ticket-list-left .ticket-list-tips .ticket-list-condition {
+  float: left;
+}
+.ticket-list-main .ticket-list-left .ticket-list-tips .ticket-list-style {
+  float: right;
+  color: mediumvioletred;
+}
+.ticket-list-main .ticket-list-left .ticket-list-tips .ticket-list-style button {
+  color: #969696;
+  border: none;
+  background: none;
+}
+.ticket-list-main .ticket-list-left .ticket-list-tips .ticket-list-style button:hover {
+  color: inherit;
+}
+.ticket-list-main .ticket-list-left .ticket-list-sort {
+  float: right;
+  color: mediumvioletred;
+  margin: 10px 0;
+}
+.ticket-list-main .ticket-list-left .ticket-list-sort button {
+  color: #969696;
+  border: none;
+  background: none;
+}
+.ticket-list-main .ticket-list-left .ticket-list-sort button:hover {
+  color: inherit;
+}
+.ticket-list-main .ticket-list-left .ticket-list-sort select {
+  color: #969696;
+}
+.ticket-list-main .ticket-list-left .ticket-list-card-area {
+  clear: both;
+}
+.ticket-list-main .ticket-list-left .ticket-list-card {
+  overflow: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.ticket-list-main .ticket-list-left .ticket-list-card > img {
+  float: left;
+}
+.ticket-list-main .ticket-list-left .ticket-list-card .ticket-list-card-info {
+  width: 80%;
+  padding-left: 10px;
+  float: left;
+}
+.ticket-list-main .ticket-list-left .ticket-list-card .ticket-list-card-info p {
+  margin-bottom: 5px;
+  color: #969696;
+}
+.ticket-list-main .ticket-list-left .ticket-list-card .ticket-list-card-info p.ticket-list-card-title {
+  font-size: 18px;
+  color: black;
+}
+.ticket-list-main .ticket-list-left .ticket-list-card .ticket-list-card-info p > span {
+  color: red;
+}
+.ticket-list-main .ticket-list-left .ticket-list-card .ticket-list-card-btn {
+  clear: both;
+  float: right;
+}
+.ticket-list-main .ticket-list-left .ticket-list-card .ticket-list-card-btn button {
+  border: none;
+  background: none;
+  margin-right: 10px;
+}
+.ticket-list-main .ticket-list-right {
+  width: 30%;
+}
+.ticket-list-main .ticket-list-right .ticket-list-right-item h1 {
+  font-size: 20px;
+}
+.ticket-list-main .ticket-list-right .ticket-list-right-item h1:after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, mediumvioletred 30%, #ccc 0);
+}
+.ticket-list-main .ticket-list-right .ticket-list-right-item img.img-cover {
+  width: 100%;
+}
+.ticket-list-main .ticket-list-right .ticket-list-right-item img.inline {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 4px;
+}
+.ticket-list-main .ticket-list-right .ticket-list-right-item .ticket-list-right-card {
+  font-size: 16px;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+  overflow: auto;
+}
+.ticket-list-main .ticket-list-right .ticket-list-right-item .ticket-list-right-card img {
+  float: left;
+  margin-right: 5px;
+}
+.ticket-list-main .ticket-list-right .ticket-list-right-item .ticket-list-right-card i {
+  font-style: normal;
+  color: red;
+}
+.ticket-list-main .ticket-list-right .ticket-list-right-item p.item-list {
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+  /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space: nowrap;
+  /* 不换行 */
+  border-bottom: 1px dashed #ccc;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.ticket-list-main .ticket-list-right .ticket-list-right-item p.item-list i {
+  font-style: normal;
+  background: #ff8031;
+  padding: 0 2px;
+  font-size: 12px;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+}
+.ticket-list-main .ticket-list-right .ticket-list-right-item .ticket-list-right-area {
+  font-size: 16px;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+  overflow: auto;
+  font-size: 14px;
+  border-bottom: 2px dashed #ccc;
+}
+.ticket-list-main .ticket-list-right .ticket-list-right-item .ticket-list-right-area img {
+  float: left;
+  margin-right: 5px;
+}
+.ticket-list-main .ticket-list-right .ticket-list-right-item .ticket-list-right-area i {
+  font-style: normal;
+  color: red;
+}
+.ticket-list-main .ticket-list-right .ticket-list-right-item .ticket-list-right-area p {
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+  /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space: nowrap;
+  /* 不换行 */
 }
