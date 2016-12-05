@@ -5,7 +5,6 @@
 }
 body {
   position: relative;
-  padding-bottom: 50px;
   font-family: 'Microsoft YaHei', '宋体', 'Myriad Pro', 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 a {
@@ -236,6 +235,42 @@ header .nav li a:hover {
 }
 header .nav li a.active-page {
   color: #e95589;
+}
+footer {
+  background: #f2f2f2;
+  overflow: auto;
+  padding-top: 15px;
+  margin-top: 50px;
+}
+footer img {
+  float: right;
+  margin-right: 10px;
+}
+footer img:first-of-type {
+  float: left;
+}
+footer div.footer-info span {
+  font-size: 35px;
+}
+footer ul {
+  list-style: none;
+  overflow: auto;
+  font-size: 17px;
+}
+footer ul li {
+  float: left;
+  padding-right: 5px;
+}
+footer ul li:after {
+  content: "|";
+  padding: 0 0.5em;
+}
+footer ul li:last-of-type:after {
+  content: '';
+}
+footer p {
+  font-size: 15px;
+  color: #747272;
 }
 #carousel-banner {
   width: 100%;
@@ -2560,4 +2595,208 @@ h3.h3-title::before {
   /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
   white-space: nowrap;
   /* 不换行 */
+}
+.crowdfunding-content-main .row {
+  margin-bottom: 25px;
+}
+.crowdfunding-content-main .crowdfunding-top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #eaeaea;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-pic {
+  position: relative;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-pic img:first-of-type {
+  width: 100%;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-pic img.flag-pic {
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info {
+  font-size: 20px;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info h1 {
+  font-size: 25px;
+  margin: 0;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info p.crowdfunding-price {
+  font-size: 30px;
+  color: #b70117;
+  margin-bottom: 0;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-progress {
+  color: #747373;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-progress .crowdfunding-progress-bar {
+  width: 100%;
+  height: 5px;
+  background: #dcdcdc;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-progress .crowdfunding-progress-bar .crowdfunding-progress-now {
+  height: 100%;
+  background: #00ff96;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-progress span {
+  float: right;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info p.crowdfunding-target {
+  font-size: 15px;
+  color: #747373;
+  margin-bottom: 0;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info p.crowdfunding-target span {
+  color: #ec6c3e;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-follow {
+  overflow: auto;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-follow button {
+  float: right;
+  margin: 5px 0;
+  width: 118px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background: #f08328;
+  font-size: 15px;
+  color: white;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-follow button:before {
+  content: "";
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 3px;
+  background: url("../images/点赞.png") no-repeat center;
+  vertical-align: -6px;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-follow button:first-of-type {
+  float: left;
+  background: #e95990;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-follow button:first-of-type:before {
+  content: "";
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 3px;
+  background: url("../images/关注.png") no-repeat center;
+  vertical-align: -6px;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-share button {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  background: #a0a0a0 no-repeat center;
+  border: none;
+  border-radius: 5px;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-share button.weichat {
+  background-image: url("../images/微信.png");
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-share button.weichat:hover {
+  background-color: #3eb134;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-share button.weibo {
+  background-image: url("../images/微博.png");
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-share button.weibo:hover {
+  background-color: #da251c;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-share button.qqzone {
+  background-image: url("../images/空间.png");
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-share button.qqzone:hover {
+  background-color: #ffc028;
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-share button.qqweibo {
+  background-image: url("../images/腾讯微博.png");
+}
+.crowdfunding-content-main .crowdfunding-top .crowdfunding-info .crowdfunding-share button.qqweibo:hover {
+  background-color: #2f88d8;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-left {
+  background: #eaeaea;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-left button {
+  font-size: 25px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid #2fd6a2;
+  width: 6em;
+  margin: 10px 0;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-left article {
+  white-space: pre-line;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-left article span {
+  white-space: pre;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-left article img {
+  max-width: 100%;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-right {
+  padding-right: 0;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-right .crowdfunding-info-card {
+  background: #eaeaea;
+  margin-bottom: 25px;
+  padding: 0 15px 25px 15px;
+  overflow: hidden;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-right .crowdfunding-info-card h2 {
+  font-size: 25px;
+  line-height: 35px;
+  margin-top: 10px;
+  border-bottom: 3px solid white;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-right .crowdfunding-info-card h2 span {
+  font-size: 18px;
+  float: right;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-right .crowdfunding-info-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-right .crowdfunding-info-card p {
+  font-size: 15px;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-right .crowdfunding-info-card button.btn-zhichi {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 50px;
+  background: #f18d34;
+  color: white;
+  font-size: 25px;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-right .crowdfunding-info-card ul {
+  list-style-position: inside;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-right .crowdfunding-info-card ul li {
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+  /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space: nowrap;
+  /* 不换行 */
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-right .crowdfunding-info-card.crowdfunding-manager p {
+  font-size: 18px;
+  padding-top: 15px;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-right .crowdfunding-info-card.crowdfunding-manager p a {
+  padding: 0 15px;
+}
+.crowdfunding-content-main .crowdfunding-middle .crowdfunding-right .crowdfunding-info-card.crowdfunding-manager p a:last-of-type {
+  background: none;
+  border: none;
+  float: right;
+  color: #e95990;
 }

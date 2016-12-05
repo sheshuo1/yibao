@@ -6,8 +6,9 @@
 }
 body {
   position: relative;
-  padding-bottom: 50px;
   font-family: 'Microsoft YaHei','宋体','Myriad Pro', 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  min-height: 100vh;
+  padding-bottom: 200px;
 }
 a{
   color:black;
@@ -236,6 +237,49 @@ header .nav li a:hover{
 }
 header .nav li a.active-page{
   color:#e95589;
+}
+
+//footer
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #f2f2f2;
+  overflow: auto;
+  padding-top: 15px;
+  margin-top: 50px;
+  img{
+    float: right;
+    margin-right: 10px;
+    &:first-of-type{
+      float: left;
+    }
+  }
+  div.footer-info{
+    span{
+      font-size: 35px;
+    }
+  }
+  ul{
+    list-style: none;
+    overflow: auto;
+    font-size: 17px;
+    li{
+      float: left;
+      padding-right: 5px;
+      &:after{
+        content: "|";
+        padding:0 0.5em;
+      }
+      &:last-of-type:after{
+        content: '';
+      }
+    }
+  }
+  p{
+    font-size: 15px;
+    color: #747272;
+  }
 }
 
 //index.html
@@ -2300,6 +2344,512 @@ h3.h3-title::before{
         p{
           .text-ellipsis;
         }
+      }
+    }
+  }
+}
+
+
+//crowdfunding-content.html
+.crowdfunding-content-main{
+  .row{
+    margin-bottom: 25px;
+  }
+  .crowdfunding-top{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #eaeaea;
+    .crowdfunding-pic{
+      position: relative;
+      img:first-of-type{
+        width: 100%;
+      }
+      img.flag-pic{
+        position: absolute;
+        top:-20px;
+        left:0;
+      }
+    }
+    .crowdfunding-info{
+      font-size: 20px;
+      h1{
+        font-size: 25px;
+        margin:0;
+      }
+      p.crowdfunding-price{
+        font-size: 30px;
+        color:#b70117;
+        margin-bottom: 0;
+      }
+      .crowdfunding-progress{
+        color:#747373;
+        .crowdfunding-progress-bar{
+          width: 100%;
+          height: 5px;
+          background: #dcdcdc;
+          .crowdfunding-progress-now{
+            height: 100%;
+            background: #00ff96;
+          }
+        }
+        span{
+          float: right;
+        }
+      }
+      p.crowdfunding-target{
+        font-size: 15px;
+        color:#747373;
+        margin-bottom: 0;
+        span{
+          color:#ec6c3e;
+        }
+      }
+      .crowdfunding-follow{
+        overflow: auto;
+        button{
+          float: right;
+          margin:5px 0;
+          width: 118px;
+          height: 40px;
+          border: none;
+          border-radius: 5px;
+          background: #f08328;
+          font-size: 15px;
+          color:white;
+          &:before{
+            content: "";
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            margin-right: 3px;
+            background: url("../images/点赞.png") no-repeat center;
+            vertical-align: -6px;
+          }
+          &:first-of-type{
+            float: left;
+            background: #e95990;
+            &:before{
+              content: "";
+              display: inline-block;
+              width: 1.5em;
+              height: 1.5em;
+              margin-right: 3px;
+              background: url("../images/关注.png") no-repeat center;
+              vertical-align: -6px;
+            }
+          }
+        }
+      }
+      .crowdfunding-share{
+        button{
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          margin-right: 10px;
+          background: #a0a0a0 no-repeat center;
+          border: none;
+          border-radius: 5px;
+          &.weichat{
+            background-image: url("../images/微信.png");
+            &:hover{
+              background-color: #3eb134;
+            }
+          }
+          &.weibo{
+            background-image: url("../images/微博.png");
+            &:hover{
+              background-color: #da251c;
+            }
+          }
+          &.qqzone{
+            background-image: url("../images/空间.png");
+            &:hover{
+              background-color: #ffc028;
+            }
+          }
+          &.qqweibo{
+            background-image: url("../images/腾讯微博.png");
+            &:hover{
+              background-color: #2f88d8;
+            }
+          }
+        }
+      }
+    }
+  }
+  .crowdfunding-middle{
+    .crowdfunding-left{
+      background: #eaeaea;
+      button{
+        font-size: 25px;
+        background: none;
+        border: none;
+        border-bottom: 3px solid #2fd6a2;
+        width: 6em;
+        margin:10px 0;
+      }
+      article{
+        white-space: pre-line;
+        font-size: 18px;
+        padding-bottom: 20px;
+        span{
+          white-space: pre;
+        }
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+    .crowdfunding-right{
+      padding-right: 0;
+      .crowdfunding-info-card{
+        background: #eaeaea;
+        margin-bottom: 25px;
+        padding:0 15px 25px 15px;
+        overflow: hidden;
+        h2{
+          font-size: 25px;
+          line-height: 35px;
+          margin-top: 10px;
+          border-bottom: 3px solid white;
+          span{
+            font-size: 18px;
+            float: right;
+          }
+        }
+        h3{
+          font-size: 15px;
+          font-weight: 700;
+        }
+        p{
+          font-size: 15px;
+        }
+        button.btn-zhichi{
+          display: block;
+          margin:0 auto;
+          width: 250px;
+          height: 50px;
+          background: #f18d34;
+          color:white;
+          font-size: 25px;
+        }
+        ul{
+          list-style-position: inside;
+          li{
+            .text-ellipsis;
+          }
+        }
+        &.crowdfunding-manager{
+          p{
+            font-size: 18px;
+            padding-top: 15px;
+            a{
+              padding: 0 15px;
+            }
+            a:last-of-type{
+              background: none;
+              border: none;
+              float: right;
+              color: #e95990;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//art-sea-content.html
+.art-sea-content-main{
+  header{
+    border: none;
+    h1{
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    p{
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  img{
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+//order-job.html
+.order-job-main{
+  h1{
+    font-size: 35px;
+    color: #ec6f3a;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ec6f3a;
+  }
+  p{
+    font-size: 17px;
+    color:#c0c0c0;
+  }
+  .order-job-info{
+    margin:40px 0;
+    >img{
+      float: left;
+      margin-right: 10px;
+    }
+    div{
+      img{
+        margin:30px 10px;
+      }
+    }
+  }
+  form{
+    .required:after{
+      content: "*";
+      color: #ec6f3a;
+    }
+    table{
+      font-size: 20px;
+      label{
+        font-weight: 500;
+      }
+      td{
+        padding-bottom: 20px;
+      }
+      input{
+        width: 200px;
+      }
+      input[type="checkbox"]{
+        width: 50px;
+      }
+      textarea{
+        width: 400px;
+        height: 150px;
+      }
+      tr>td:first-of-type{
+        width: 150px;
+      }
+    }
+    button{
+      width: 80px;
+      height: 40px;
+      border: 1px solid #ccc;
+      background: #ccc;
+      font-size: 20px;
+      color:white;
+      margin:20px 30px 50px 50px;
+      &:first-of-type{
+        background: #ec6c3e;
+        border: 1px solid orangered;
+      }
+    }
+  }
+}
+
+
+//my-space-index.html
+.my-space-index-main{
+  .member-info-top{
+    margin: 30px auto;
+    width: 500px;
+    overflow: auto;
+    >img{
+      float: left;
+      margin-right: 10px;
+    }
+    h1{
+      margin-top: 0;
+      color: #ec6f3a;
+      font-size: 25px;
+    }
+    p.member-renzheng{
+      font-size: 15px;
+    }
+    p.member-description{
+      font-size: 20px;
+      button{
+        border: none;
+        background: #e95589;
+        font-size: 14px;
+        color: white;
+        width: 83px;
+        height: 27px;
+        border-radius: 5px;
+        a{
+          color:inherit;
+        }
+      }
+    }
+    p.member-link{
+      a{
+        color: #ec6f3a;
+        margin-right: 2em;
+      }
+    }
+  }
+  .my-space-nav{
+    list-style: none;
+    margin-bottom: 20px;
+    li{
+      cursor: pointer;
+      display: inline-block;
+      width: 130px;
+      height: 60px;
+      font-size: 20px;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 60px;
+      &:hover,&.active{
+        background: #ec6c3e;
+        color:white;
+        &:after{
+          content: "";
+          display: block;
+          position: relative;
+          left:55px;
+          top: -5px;
+          width: 10px;
+          border-top: 20px solid #ec6c3e;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+        }
+      }
+    }
+  }
+  img.member-cover{
+    width: 100%;
+  }
+  .my-space-area{
+    .col-xs-3,.col-xs-6{
+      padding: 5px;
+      >div{
+        border: 1px solid #ccc;
+        padding-bottom: 30px;
+        h1{
+          font-size: 14px;
+          color: #ec6941;
+          margin:0;
+          line-height: 3;
+          padding-left: 1em;
+          border-bottom: 1px solid #ccc;
+        }
+      }
+    }
+    .my-info-card{
+      .my-info-card-sm{
+        margin:10px 0;
+        overflow: auto;
+        padding-left: 10px;
+        img{
+          width: 54px;
+          height: 60px;
+          float: left;
+          margin-right: 5px;
+        }
+        p{
+          margin-bottom: 5px;
+          font-size: 12px;
+        }
+      }
+      .my-follow-info{
+        overflow: auto;
+        margin:0 10px;
+        border: 1px solid #ccc;
+        p{
+          float: left;
+          width: 50%;
+          text-align: center;
+          margin:0;
+          line-height: 2;
+          span{
+            display: block;
+            color:#ec6c3e;
+          }
+          &:first-of-type{
+            border-right: solid 1px #ccc;
+          }
+        }
+      }
+      button{
+        display: block;
+        margin:10px auto;
+        width: 80%;
+        font-size: 18px;
+        line-height: 2;
+        background: none;
+      }
+    }
+    .my-weibo{
+      section{
+        padding:10px;
+        border-bottom: 1px dashed #ccc;
+        p.weibo-time a{
+          float: right;
+        }
+        div{
+          padding:10px 0;
+          img{
+            width: 30%;
+            margin-right: 5px;
+          }
+        }
+      }
+      .my-weibo-footer{
+        float: right;
+        margin:0;
+        line-height: 2;
+      }
+    }
+    .my-follow{
+      a{
+        text-decoration: none;
+      }
+      section{
+        margin:5px;
+        overflow: auto;
+        .follow-cover{
+          width: 54px;
+          height: 60px;
+          float: left;
+          margin-right: 5px;
+        }
+        .follow-ico{
+          width: 20px;
+        }
+      }
+    }
+    .member-data{
+      display: none;
+      table{
+        width: 100% ;
+        border-bottom: 1px solid #ccc;
+        tr{
+          td:first-of-type{
+            font-size: 16px;
+            width: 30%;
+            color:black;
+          }
+          td{
+            padding-left: 20px;
+            font-size: 14px;
+            width: 60%;
+            color: #969696;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+    .member-contact{
+      display: none;
+      .my-contact{
+        margin:20px auto;
+        width: 80%;
+        height: 100px;
+        border: 2px dashed #ec6c3e;
+        font-size: 20px;
+        line-height: 96px;
+        color: #ec6c3e;
+        text-align: center;
       }
     }
   }
