@@ -15,6 +15,7 @@ a{
 }
 a:hover{
   cursor: pointer;
+  text-decoration: none;
 }
 .box{
   width: 960px;
@@ -50,7 +51,6 @@ span.phone-logo:before{
 //header样式
 header{
   border-bottom: 2px solid #e95689;
-  padding-bottom: 9px;
 }
 .banner{
   background: #f2f2f2;
@@ -237,6 +237,67 @@ header .nav li a:hover{
 }
 header .nav li a.active-page{
   color:#e95589;
+}
+
+
+//header.ticket-header
+div.ticket-header{
+  background: #e95589;
+  height: 75px;
+  margin-bottom: 40px;
+  .banner{
+    background: none;
+    height: 100%;
+    img{
+      height: 60px;
+      vertical-align: 20px;
+      margin-right: 15px;
+    }
+    select{
+      vertical-align: 40px;
+      border: none;
+      color:white;
+      background: #e95589;
+      margin-right: 15px;
+    }
+    ul{
+      vertical-align: 10px;
+      list-style: none;
+      display: inline-block;
+      overflow: auto;
+      margin:0;
+      li{
+        float: left;
+        font-size: 25px;
+        line-height: 75px;
+        color:white;
+        margin-right: 20px;
+        a{
+          color:inherit;
+        }
+      }
+    }
+    .header-search{
+      display: inline-block;
+      position: relative;
+      input{
+        vertical-align: 45px;
+        font-size: 15px;
+        line-height: 2.5;
+        width: 300px;
+        padding-left: 1em;
+        border: none;
+        border-radius: 5px;
+      }
+      img{
+        position: absolute;
+        height: 25px;
+        top:5px;
+        right: 0;
+      }
+    }
+
+  }
 }
 
 //footer
@@ -2851,6 +2912,812 @@ h3.h3-title::before{
         color: #ec6c3e;
         text-align: center;
       }
+    }
+  }
+}
+
+
+//ticket-content-main.html
+.ticket-content-main{
+  .ticket-content-top{
+    border: 1px solid #eee;
+    .ticket-content-nav{
+      height: 75px;
+      background: #f6f6f6;
+      p{
+        line-height: 75px;
+        color: #6f6f6f;
+        padding-left: 1em;
+        a{
+          color:inherit;
+        }
+      }
+    }
+    .ticket-buy{
+      padding: 30px 0;
+      border-right:1px solid #eee ;
+      img{
+        max-width: 100%;
+      }
+      h1{
+        font-size: 20px;
+        margin:0 0 20px 0;
+      }
+      ul.ticket-buy-progress{
+        display: block;
+        width: 95%;
+        list-style: none;
+        overflow: auto;
+        padding: 20px 5px;
+        border: 1px solid #ccc;
+        background: #fff3f7;
+        li{
+          float: left;
+          position: relative;
+          width: 25%;
+          line-height: 20px;
+          font-size: 12px;
+          color:#979595;
+          border-bottom: 2px solid #ccc;
+          &:after{
+            content: "";
+            display: block;
+            position: relative;
+            top:6px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid white;
+            background: #ccc;
+          }
+          &.over{
+            border-bottom-color: #e95689;
+            &:after{
+              content: "";
+              display: block;
+              position: relative;
+              top:6px;
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              border: 2px solid #e95689;
+              background: white;
+            }
+          }
+          &.active{
+            font-size: 16px;
+            color: #e95689;
+            &:after{
+              content: "";
+              display: block;
+              position: relative;
+              top:6px;
+              width: 10px;
+              height: 10px;
+              transform: scale(1.5);
+              border-radius: 50%;
+              border: 1px solid #e95689;
+              background: white;
+            }
+            &:before{
+              content:"";
+              display: block;
+              position: absolute;
+              width: 8px;
+              height: 5px;
+              border-bottom: 2px solid #e95589;
+              border-left: 2px solid #e95589;
+              bottom:-3px;
+              left: 1px;
+              z-index: 10;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+      .ticket-buy-table{
+        margin:20px 0;
+        font-size: 12px;
+        color: #9d9d9d;
+        tr{
+          td{
+            width: 350px;
+            vertical-align: top;
+            padding-bottom: 20px;
+            button{
+              min-width: 5em;
+              margin-bottom: 10px;
+              margin-right: 5px;
+              padding:5px;
+              color:black;
+              border:1px solid #eee;
+              background: none;
+            }
+          }
+          td:first-of-type{
+            width: 6em;
+          }
+        }
+      }
+      button.ticket-buy-btn{
+        display: block;
+        margin:10px auto;
+        width: 6em;
+        height: 2em;
+        background: #e95589;
+        color:white;
+        border: none;
+      }
+    }
+    .ticket-info{
+      div{
+        &:last-of-type{
+          border: none;
+        }
+        font-size: 12px;
+        color: #969696;
+        border-bottom: 1px dashed #ccc;
+        h2{
+          font-size: 12px;
+          color:black;
+        }
+        a{
+          margin-right: 5px;
+          color:inherit;
+        }
+      }
+    }
+  }
+  .ticket-content-down{
+    .ticket-content-area{
+      padding:0;
+      border: 1px solid #eee;
+      .ticket-content-tags{
+        font-size: 14px;
+        line-height: 45px;
+        background: #f6f6f6;
+        a{
+          color:inherit;
+          display: inline-block;
+          height: 100%  ;
+          padding:0 15px;
+          border-right:1px solid #ddd;
+          &:last-of-type{
+            border: none;
+          }
+        }
+      }
+      .ticket-content-info{
+        padding:0 15px;
+        h1{
+          font-size: 20px;
+          color: #8f8f8f;
+        }
+        .ticket-base-info{
+          margin: 10px;
+          padding:10px;
+          border: 1px solid #ddd;
+          table{
+            tr{
+              td{
+                font-size: 12px;
+                color: #969696;
+                padding: 10px;
+                &:nth-of-type(odd){
+                  font-size: 14px;
+                  color: black;
+                }
+              }
+            }
+          }
+        }
+        article{
+          padding:50px;
+          text-indent: 2em;
+          img{
+            display: block;
+            margin:10px auto;
+          }
+        }
+      }
+    }
+    .ticket-content-right{
+      padding:0;
+      border: 1px solid #eee;
+      div{
+        p.ticket-right-title{
+          font-size: 14px;
+          line-height: 45px;
+          background: #f6f6f6;
+          padding-left:1em;
+          &:before{
+            content: '|';
+            color:#e95589;
+            font-weight: 700;
+          }
+        }
+        ul{
+          padding:10px;
+          list-style:circle inside;
+          li{
+            font-size: 14px;
+            border-bottom: 1px solid #eee;
+            span{
+              display: block;
+              color: #cccccc;
+              font-size: 12px;
+            }
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//ticket-select.html
+.ticket-select-main{
+  >p{
+    margin:30px 0;
+    font-size: 18px;
+  }
+  >ul{
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+    overflow: hidden;
+    li{
+      float: left;
+      position: relative;
+      width: 33.3%;
+      text-align: center;
+      background: #474747;
+      color: #cccccc;
+      &:after {
+        content: "";
+        display: block;
+        border: 14px solid transparent;
+        border-left: 14px solid #474747;
+        position: absolute;
+        top:0;
+        left:100%;
+        z-index: 10;
+      }
+      &.active{
+        background: #ee020c;
+        &:after {
+          content: "";
+          display: block;
+          border: 14px solid transparent;
+          border-left: 14px solid #ee020c;
+          position: absolute;
+          top:0;
+          left:100%;
+          z-index: 10;
+        }
+      }
+    }
+  }
+  >div{
+    position: relative;
+    min-height: 600px;
+    border: 1px solid #ccc;
+    img.area-map{
+      position: absolute;
+      top:50px;
+      left: 250px;
+    }
+    div.seat-info{
+      position: absolute;
+      width: 150px;
+      height: 200px;
+      border:2px solid #ccc;
+      bottom: 10px;
+      left: 10px;
+      p{
+        font-size: 14px;
+        margin:10px 5px;
+        span{
+          display: inline-block;
+          width: 4em;
+          margin:0 1em;
+          text-align: center;
+          background: red;
+        }
+        &:nth-of-type(2) span{
+          background: yellow;
+        }
+        &:nth-of-type(3) span{
+          background: #a175ff;
+        }
+        &:nth-of-type(4) span{
+          background: #ff53e8;
+        }
+        &:nth-of-type(5) span{
+          background: #23beff;
+        }
+        &:nth-of-type(6) span{
+          background: green;
+        }
+      }
+    }
+    a.area-1{
+      display: block;
+      position: absolute;
+      width: 75px;
+      height: 65px;
+      background: transparent;
+      top: 210px;
+      left: 470px;
+      &:hover{
+        background: rgba(0,0,0,0.3);
+      }
+    }
+    a.area-2{
+      display: block;
+      position: absolute;
+      width: 75px;
+      height: 65px;
+      background: transparent;
+      top: 210px;
+      left: 555px;
+      &:hover{
+        background: rgba(0,0,0,0.3);
+      }
+    }
+    a.area-3{
+      display: block;
+      position: absolute;
+      width: 75px;
+      height: 65px;
+      background: transparent;
+      top: 285px;
+      left: 470px;
+      &:hover{
+        background: rgba(0,0,0,0.3);
+      }
+    }
+    a.area-4{
+      display: block;
+      position: absolute;
+      width: 75px;
+      height: 65px;
+      background: transparent;
+      top: 285px;
+      left: 555px;
+      &:hover{
+        background: rgba(0,0,0,0.3);
+      }
+    }
+    .seat-map{
+      position: absolute;
+      //width: 800px;
+      //height: 500px;
+      padding:20px;
+      top:50px;
+      left: 250px;
+      color:transparent;
+      .a-seat{
+        color:transparent;
+        background-color: transparent;
+        background-image:url(../images/seat-ico.png);
+        height:16px;
+        width:16px;
+        background-position:-80px 0;
+      }
+      .b-seat{
+        color:transparent;
+        background-color: transparent;
+        background-image:url(../images/seat-ico.png);
+        height:16px;
+        width:16px;
+        background-position:-64px 0;
+      }
+      .c-seat{
+        color:transparent;
+        background-color: transparent;
+        background-image:url(../images/seat-ico.png);
+        height:16px;
+        width:16px;
+        background-position:-96px 0;
+      }
+      .seatCharts-seat.focused{
+        color:transparent;
+        background-color: transparent;
+        background-image:url(../images/seat-ico.png);
+        height:16px;
+        width:16px;
+        background-position:0 0;
+      }
+      .seatCharts-seat.unavailable{
+        color:transparent;
+        background-color: transparent;
+        background-image:url(../images/seat-ico.png);
+        height:16px;
+        width:16px;
+        background-position:-48px 0;
+      }
+      .seatCharts-seat.selected{
+        color:transparent;
+        background-color: transparent;
+        background-image:url(../images/seat-ico.png);
+        height:16px;
+        width:16px;
+        background-position:-32px 0;
+      }
+    }
+    .select-seats{
+      display: none;
+      background: white;
+      width: 200px;
+      height: 100%;
+      position: absolute;
+      right:0;
+      border: 1px solid #cccccc;
+      >p{
+        font-size: 16px;
+        background: #ccc;
+        line-height: 2.5;
+      }
+      >ul{
+        list-style: none;
+        border-bottom: 1px solid #ccc;
+        li{
+          margin-left: 1em;
+          margin-bottom: 1em;
+          button{
+            float: right;
+          }
+        }
+      }
+      .buy-ticket-btn{
+        display: block;
+        width: 80%;
+        height: 50px;
+        margin:10px auto;
+        border: none;
+        font-size: 16px;
+        color:white;
+        background: #f00800;
+      }
+    }
+  }
+  .pay-order{
+    border: none;
+    h1{
+      font-size: 20px;
+      color: #d95584;
+      text-indent: 1em;
+      &:after{
+        content: "";
+        display: block;
+        width: 100%;
+        height:2px;
+        margin:10px 0;
+        background-image:linear-gradient(to right, #e95589 150px, #ccc 150px);
+        background-color: #cccccc;
+      }
+    }
+    .select-express-kinds{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      padding:20px 50px;
+      .express{
+        &:hover,&.active{
+          >div{
+            background: #e95589;
+          }
+        }
+        p{
+          text-align: center;
+          font-size: 15px;
+          color: #e95589;
+        }
+        >div{
+          width: 100px;
+          height: 100px;
+          padding:7px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          margin-bottom:10px ;
+          button{
+            width: 86px;
+            height: 86px;
+            border: none;
+            background: url(../images/pay-ico.png) no-repeat;
+          }
+        }
+        &.qrcode {
+          button {
+            background-position: 0 0;
+          }
+          &:hover ,&.active{
+            button {
+              background-position: -86px 0;
+            }
+          }
+        }
+        &.kuaidi{
+          button{
+            background-position:-172px 0;
+          }
+          &:hover,&.active{
+            button{
+              background-position:-258px 0;
+            }
+          }
+        }
+        &.ziqu{
+          button{
+            background-position:-344px 0;
+          }
+          &:hover,&.active{
+            button{
+              background-position:-430px 0;
+            }
+          }
+        }
+      }
+    }
+    .express-area{
+      &:after{
+        content: '';
+        display: block;
+        width: 22px;
+        height: 22px;
+        border: 1px solid #ccc;
+        border-right:none;
+        border-bottom:none;
+        background: white;
+        transform: rotate(45deg);
+        position: absolute;
+        top:-11px;
+        left: 175px;
+      }
+      &.kuaidi-area{
+        display: none;
+        &:after{
+          content: '';
+          display: block;
+          width: 22px;
+          height: 22px;
+          border: 1px solid #ccc;
+          border-right:none;
+          border-bottom:none;
+          background: white;
+          transform: rotate(45deg);
+          position: absolute;
+          top:-11px;
+          left: 470px;
+        }
+      }
+      &.ziqu-area{
+        display: none;
+        &:after{
+          content: '';
+          display: block;
+          width: 22px;
+          height: 22px;
+          border: 1px solid #ccc;
+          border-right:none;
+          border-bottom:none;
+          background: white;
+          transform: rotate(45deg);
+          position: absolute;
+          top:-11px;
+          left: 755px;
+      }
+      }
+      border: 1px solid #ccc;
+      position: relative;
+      p{
+        font-size: 18px;
+        color:#e95589;
+        padding:20px 0 10px 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      .e-ticket-kinds{
+        font-size: 15px;
+        border-bottom: 1px dashed #ccc;
+        label{
+          line-height: 4;
+          padding:0 50px;
+          font-weight: 500;
+          i{
+            font-style: normal;
+            color:#e95589;
+          }
+        }
+      }
+      table{
+        font-size: 15px;
+        margin:20px 0 10px 0;
+        tr{
+          td{
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+          }
+          input{
+            width: 240px;
+            padding-bottom: 5px;
+          }
+          i{
+            font-style: normal;
+            color:#e95589;
+          }
+          td:first-of-type{
+            width: 150px;
+            text-align: right;
+            vertical-align: top;
+          }
+        }
+      }
+      p.wenxin{
+        width: 500px;
+        font-size: 14px;
+        color: #e95589;
+        background: #fbc9db;
+        border: 1px solid #9f5f75;
+        padding:5px;
+        margin-left: 30px;
+      }
+    }
+    .pay-kinds{
+      .express-area .e-ticket-kinds;
+      border: none;
+    }
+    .goods-list{
+      margin:10px 0;
+      border-bottom: 1px dashed #ccc;
+      display: block;
+      width: 100%;
+      font-size: 15px;
+      td{
+        width: 192px;
+        text-align: center;
+        padding-bottom: 10px;
+      }
+    }
+    >p{
+      font-size: 15px;
+      i{
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+        cursor: pointer;
+        &.plus{
+          background: url("../images/+.png") no-repeat center;
+        }
+        &.sub{
+          background: url("../images/-.png") no-repeat center;
+        }
+      }
+    }
+    .make-sure-pay{
+      padding:20px 0;
+      text-align: right;
+      .sum-price{
+        font-size: 28px;
+        i{
+          font-style: normal;
+          color:#e95589;
+        }
+      }
+      .rules{
+        font-size: 16px;
+        input{
+          margin-right: 5px;
+        }
+        a{
+          margin:0 5px;
+          color:blue;
+        }
+      }
+      button{
+        width: 256px;
+        height: 63px;
+        border: none;
+        border-radius:10px;
+        background: #e95589;
+        font-size: 28px;
+        color:white;
+      }
+    }
+    .liuyan{
+      display: none;
+      textarea {
+        width: 30em;
+        height: 3em;
+      }
+    }
+    .fapiao{
+      display: none;
+      border: 1px solid #ccc;
+      padding:20px;
+      button{
+        width: 5em;
+        border: none;
+        border-radius: 5px;
+        color:white;
+        &:first-of-type{
+          background: #e95589;
+        }
+        &:last-of-type{
+          background: #ccc;
+        }
+      }
+    }
+    .youhui{
+      display: none;
+      .youhui-title{
+        margin:0;
+        span{
+          display: inline-block;
+          font-size: 20px;
+          text-align: center;
+          color:white;
+          width: 110px;
+          height: 32px;
+          background: #e95589;
+          border-radius:5px 5px 0 0 ;
+        }
+      }
+      >div{
+        border:1px solid #ccc;
+        border-top:2px solid #e95589;
+        padding:20px;
+        .select-youhuiquan{
+          padding-bottom: 20px;
+          border-bottom:1px dashed #ccc;
+          select{
+            width: 20em;
+            height: 30px;
+          }
+          a{
+            color:#e95589;
+          }
+        }
+        .youhuima{
+          input{
+            width: 20em;
+            height: 30px;
+          }
+          button{
+            width: 64px;
+            height: 30px;
+            font-size: 20px;
+            color:white;
+            border: none;
+            border-radius: 5px;
+            background: #e95589;
+            vertical-align: bottom;
+          }
+        }
+      }
+    }
+  }
+  .pay-success{
+    img{
+      display: block;
+      margin:70px auto;
+    }
+    h1{
+      text-align: center;
+      font-size: 110px;
+      color:#e95589;
+    }
+    button{
+      font-size: 28px;
+      float: right;
+      color: #aaa;
+      margin-right: 20px;
+      background: none;
+      border:none;
     }
   }
 }

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <title>选择座位--票务整合--艺宝网</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet/less" type="text/css" href="css/main.less">
+    <script src="js/less.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="banner">
+        <div class="box">
+            <p class="login-banner">[ <span class="login-button"><a>登陆</a></span> <span><a>注册</a></span>] | <span><a>我的艺宝</a></span> | <span class="my-work-button"><a>我的工作</a></span></p>
+            <p class="server-banner"><span class="weixin-button"><a>艺宝网微信</a></span> | <span class="tel-button"><a>手机版</a></span> | <span><a>客户服务</a></span> | <span class="menu-button"><a>网站导航</a></span></p>
+        </div>
+    </div>
+</header>
+
+<main class="ticket-select-main box">
+    <p><a href="nav.html">艺宝</a>   >   <a href="#">南宁</a>   >   <a href="#">戏剧</a>   >   <a href="#">大型壮族魔幻杂技剧《百鸟衣》片段</a>  >   2016-12-30  周五  19:30</p>
+    <ul>
+        <li>1.选择区域</li>
+        <li>2.选择座位</li>
+        <li class="active">3.结账付款</li>
+    </ul>
+    <div class="pay-order">
+        <h1>送货方式</h1>
+        <div class="select-express-kinds">
+            <div class="express qrcode active" id="qrcode">
+                <div><button></button></div>
+                <p>电子票（推荐）</p>
+            </div>
+            <div class="express kuaidi" id="kuaidi">
+                <div><button></button></div>
+                <p>快递配送</p>
+            </div>
+            <div class="express ziqu" id="ziqu">
+            <div><button></button></div>
+                <p>艺宝网自取</p>
+            </div>
+        </div>
+        <div class="express-area qrcode-area">
+            <p>选择电子票的获取方式</p>
+            <div class="e-ticket-kinds">
+                <label><input type="radio" name="ticket-kinds" checked>身份证电子票<i>[推荐]</i></label>
+                <label><input type="radio" name="ticket-kinds">二维码电子票</label>
+            </div>
+            <table>
+                <tr>
+                    <td>*姓名：</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>*二代身份证号：</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>*手机号码：</td>
+                    <td><input type="text"><i>小提醒：本订单相关的服务短信都将发至此手机号上</i></td>
+                </tr>
+            </table>
+            <p class="wenxin">温馨提示：请持购票时所填写的二代身份证到演出地点或自助机换票</p>
+        </div>
+        <div class="express-area kuaidi-area">
+            <p>填写快递信息</p>
+            <table>
+                <tr>
+                    <td>*姓名：</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>*收货地址：</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>*手机号码：</td>
+                    <td><input type="text"><i>小提醒：本订单相关的服务短信都将发至此手机号上</i></td>
+                </tr>
+            </table>
+        </div>
+        <div class="express-area ziqu-area">
+            <p>取货信息</p>
+            <table>
+                <tr>
+                    <td>取票城市：</td>
+                    <td>
+                        <select name="qupiao-city" id="qupiao-city">
+                            <option value="nanning">南宁</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>取票地址：</td>
+                    <td>南宁市民主路13号广西歌舞剧院6栋2单元205室</td>
+                </tr>
+                <tr>
+                    <td>取票时间：</td>
+                    <td>工作日9:00-18:00</td>
+                </tr>
+                <tr>
+                    <td>*姓名：</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>*手机号码：</td>
+                    <td><input type="text"><i>小提醒：本订单相关的服务短信都将发至此手机号上</i></td>
+                </tr>
+            </table>
+        </div>
+        <h1>选择付款方式</h1>
+        <div class="pay-kinds">
+            <label><input type="radio" name="pay-kinds" checked>网上支付</label>
+        </div>
+        <h1>商品清单</h1>
+        <table class="goods-list">
+            <tr>
+                <td>商品名称</td>
+                <td>座位号</td>
+                <td>单价</td>
+                <td>数量</td>
+                <td>小计（元）</td>
+            </tr>
+            <tr>
+                <td>刘若英演唱会<br>2016-12-09 周五 20:00</td>
+                <td>一楼10排11号</td>
+                <td>480.0</td>
+                <td>2</td>
+                <td>960.0</td>
+            </tr>
+        </table>
+        <p><i class="plus youhui-btn"></i>选择优惠方式 【抵扣票款】</p>
+        <div class="youhui">
+            <p class="youhui-title"><span>优惠券</span></p>
+            <div>
+                <p class="select-youhuiquan">
+                    <select name="youhuiquan" id="youhuiquan">
+                        <option>您当前可用优惠券0张</option>
+                    </select>
+                    <a href="#">【艺宝网优惠券使用规则】</a>
+                </p>
+                <p>添加新的优惠券</p>
+                <p class="youhuima"><input type="text" placeholder="请输入16位数的优惠卷验证码"> <button>使用</button></p>
+            </div>
+        </div>
+        <p><i class="plus fapiao-btn"></i>我要开发票</p>
+        <div class="fapiao">
+            <p>发票类型：<input type="radio" checked>公司</p>
+            <p>发票抬头：<input type="text"></p>
+            <button>确定</button>
+            <button>取消</button>
+        </div>
+        <p><i class="plus liuyan-btn"></i>给艺宝留言</p>
+        <div class="liuyan">
+            <textarea placeholder="可以留下您对商品的其他要求."></textarea>(共50个字)
+        </div>
+        <div class="make-sure-pay">
+            <p class="sum-price">待支付总额：<i>960元</i></p>
+            <p class="rules"><label><input type="checkbox">我已阅读并同意</label><a href="#">订票服务条款</a></p>
+            <a href="pay-success.html"><button>确认支付</button></a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="box">
+        <img src="images/logo.png" alt="logo">
+        <img src="images/手机客户端.png" alt="app">
+        <img src="images/微信二维码.png" alt="weichat">
+        <div class="footer-info">
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">客服中心</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">合作加盟</a></li>
+                <li><a href="#">诚聘英才</a></li>
+                <li><a href="#">友情链接</a></li>
+            </ul>
+            <p>版权所有  广西群星艺术设计有限公司</p>
+            <p>公司地址：广西南宁青秀区民主路13号歌舞剧院6栋二单元205室</p>
+            <p>全国热线：<span>0771-5604240</span></p>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-1.10.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $('.youhui-btn,.fapiao-btn,.liuyan-btn').on('click',function () {
+        $(this).toggleClass('sub');
+        $(this).parent('p').next('div').toggle(200);
+    });
+    $('.express').on('click',function () {
+        $('.express').removeClass('active');
+        $(this).addClass('active');
+        $('.express-area').hide();
+        $('.'+$(this).attr('id')+'-area').show();
+    })
+</script>
+</body>
+</html>
