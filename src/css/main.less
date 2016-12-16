@@ -11,11 +11,11 @@ body {
   padding-bottom: 200px;
 }
 a{
-  color:black;
+  color:inherit;
 }
 a:hover{
+  color:inherit;
   cursor: pointer;
-  text-decoration: none;
 }
 .box{
   width: 960px;
@@ -377,6 +377,9 @@ img.index-img{
 .index-content-area{
   padding-top:35px;
   padding-bottom:35px;
+  .item img{
+    width: 100%;
+  }
 }
 .carousel-area .carousel-control.left{
   left:-100px;
@@ -610,7 +613,7 @@ h3.h3-title::before{
   vertical-align: bottom;
   position: absolute;
   bottom: 3px;
-  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));
+  //background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));
 }
 .src-hot-work-list{
   overflow: hidden;
@@ -1275,20 +1278,31 @@ h3.h3-title::before{
   .row{
     margin:30px -30px;
     .news-left-area{
+      #news-top-carousel{
+        img{
+          width: 100%;
+        }
+      }
       border-right:1px solid #ccc;
       .news-index-item{
+        height: 86px;
+        overflow: hidden;
         margin:15px 0;
         img{
           width: 128px;
           height: 86px;
+          margin-right: 10px;
           float: left;
         }
         p{
-          .text-ellipsis;
           padding-left: 10px;
+          margin:0;
+          color: #888;
           &.news-red-title{
+            .text-ellipsis;
+            margin-bottom: 18px;
             color:#aa0000;
-            font-size: 18px;
+            font-size: 22px;
           }
         }
       }
@@ -1473,12 +1487,12 @@ h3.h3-title::before{
               height: 0.5em;
               width: 0.5em;
               background: red;
-              border-radius: 2em;
+              border-radius: 50%;
               margin-right: 0.5em;
             }
             .text-ellipsis;
             line-height: 2;
-            color: red;
+            color: black;
           }
         }
       }
@@ -1599,6 +1613,15 @@ h3.h3-title::before{
     color:#969696;
     span{
       float: right;
+    }
+  }
+  #news-main-carousel{
+    .item{
+      img{
+        max-width: 100%;
+        display: block;
+        margin:0 auto;
+      }
     }
   }
   .news-caption-block{
@@ -2637,6 +2660,43 @@ h3.h3-title::before{
   img{
     max-width: 100%;
     margin-bottom: 10px;
+  }
+}
+
+
+//hot-job-content.html
+.hot-job-content-main{
+  article{
+    header{
+      border: none;
+      h1{
+        font-size: 26px;
+        margin-bottom: 10px;
+      }
+      p{
+        padding-bottom: 10px;
+      }
+    }
+    img{
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  div.tonggao{
+    margin-top: 30px;
+    border:2px solid #ccc;
+    h1{
+      font-size: 26px;
+      text-align: center;
+    }
+    ul{
+      font-size: 18px;
+      margin-left: 20px;
+      color:#969696;
+      li{
+        margin-bottom: 10px;
+      }
+    }
   }
 }
 
@@ -3708,7 +3768,7 @@ h3.h3-title::before{
     }
     h1{
       text-align: center;
-      font-size: 110px;
+      font-size: 80px;
       color:#e95589;
     }
     button{
@@ -3718,6 +3778,65 @@ h3.h3-title::before{
       margin-right: 20px;
       background: none;
       border:none;
+    }
+  }
+}
+
+
+//resource-content.html
+.resource-content-main{
+  padding:20px 0;
+  .member-info-card{
+    border:1px solid #cccccc;
+    .member-info-txt{
+      padding-left: 50px;
+    }
+    .member-info-img{
+      padding:0;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  #carousel-resource-content{
+    margin:20px 0 50px 0;
+    .carousel-control{
+      color:black;
+      width: 15px;
+      background: none;
+      &.right{
+        right: -30px;
+      }
+      &.left{
+        left:-30px;
+      }
+    }
+  }
+  .resource-info-table{
+    font-size: 20px;
+    margin-bottom:20px;
+    tr{
+      td{
+        vertical-align: top;
+        padding-bottom: 20px;
+        dl{
+          margin:0;
+          dt{
+            font-weight: normal;
+          }
+          dd{
+            margin-left: 2em;
+          }
+        }
+        &:first-of-type{
+          font-weight: 700;
+          &:after{
+            content: "|";
+            display: inline-block;
+            margin:0 10px;
+          }
+        }
+      }
     }
   }
 }

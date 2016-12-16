@@ -18,7 +18,7 @@
 <header>
     <div class="banner">
         <div class="box">
-            <p class="login-banner">[ <span class="login-button"><a>登陆</a></span> <span><a>注册</a></span>] | <span><a>我的艺宝</a></span> | <span class="my-work-button"><a>我的工作</a></span></p>
+            <p class="login-banner">[ <span class="login-button"><a>登陆</a></span> <span><a>注册</a></span>] | <span><a href="my-space-index.html">我的艺宝</a></span> | <span class="my-work-button"><a>我的工作</a></span></p>
             <p class="server-banner"><span class="weixin-button"><a>艺宝网微信</a></span> | <span class="tel-button"><a>手机版</a></span> | <span><a>客户服务</a></span> | <span class="menu-button"><a>网站导航</a></span></p>
         </div>
     </div>
@@ -30,7 +30,7 @@
         <div class="searchline" role="search">
             <form class="top_search">
                 <input type="text" name="search-word" placeholder="请输入要搜索的内容"/>
-                <span class="search-btn">搜索</span>
+                <a href="resource-list.html"><span class="search-btn">搜索</span></a>
             </form>
             <ul class="hot_word">
                 <li><a href="#">模特</a></li>
@@ -58,12 +58,12 @@
     <h1>工作预约</h1>
     <p>提示：您所预约的为艺宝签约艺人，工作预约确认无误后，将由艺宝专业经纪人为您跟进服务</p>
     <div class="order-job-info">
-        <img src="images/img1_des_6712855.jpg" alt="pic">
+        <img src="images/yinyaning.jpg" alt="pic" width="128" height="165">
         <div>
             <img src="images/ico_07.png" alt="ico">
             <img src="images/ico_09.png" alt="ico">
             <p>预约职业：模特</p>
-            <p>预约对象：王熙然 Crystal</p>
+            <p>预约对象：尹雅宁</p>
         </div>
     </div>
     <h1>工作信息</h1>
@@ -155,7 +155,7 @@
                 <li><a href="#">诚聘英才</a></li>
                 <li><a href="#">友情链接</a></li>
             </ul>
-            <p>版权所有  广西群星艺术设计有限公司</p>
+            <p>版权所有  广西群星艺术设计有限公司 <a href="http://www.miibeian.gov.cn/" style="color:inherit;">桂ICP备15000036号-4</a></p>
             <p>公司地址：广西南宁青秀区民主路13号歌舞剧院6栋二单元205室</p>
             <p>全国热线：<span>0771-5604240</span></p>
         </div>
@@ -167,7 +167,11 @@
 <script src="js/bootstrap-datetimepicker.zh-CN.js"></script>
 <script>
     $('#submit').on('click',function () {
-        alert("您的预约信息已成功提交！")
+        alert("您的预约信息已成功提交！");
+        window.history.back();
+    });
+    $('#cancel').on('click',function () {
+        window.history.back();
     });
     $('#datetimepicker1,#datetimepicker2').datetimepicker({
         format: 'yyyy-mm-dd hh:ii',

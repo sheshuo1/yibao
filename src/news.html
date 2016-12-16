@@ -6,7 +6,8 @@
     <meta name="renderer" content="webkit">
     <title>娱乐新闻--艺宝网</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet/less" href="css/main.less">
+    <script src="js/less.min.js"></script>
     <!--[if lt IE 9]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -16,7 +17,7 @@
 <header>
     <div class="banner">
         <div class="box">
-            <p class="login-banner">[ <span class="login-button"><a>登陆</a></span> <span><a>注册</a></span>] | <span><a>我的艺宝</a></span> | <span class="my-work-button"><a>我的工作</a></span></p>
+            <p class="login-banner">[ <span class="login-button"><a>登陆</a></span> <span><a>注册</a></span>] | <span><a href="my-space-index.html">我的艺宝</a></span> | <span class="my-work-button"><a>我的工作</a></span></p>
             <p class="server-banner"><span class="weixin-button"><a>艺宝网微信</a></span> | <span class="tel-button"><a>手机版</a></span> | <span><a>客户服务</a></span> | <span class="menu-button"><a>网站导航</a></span></p>
         </div>
     </div>
@@ -28,7 +29,7 @@
         <div class="searchline" role="search">
             <form class="top_search">
                 <input type="text" name="search-word" placeholder="请输入要搜索的内容"/>
-                <span class="search-btn">搜索</span>
+                <a href="resource-list.html"><span class="search-btn">搜索</span></a>
             </form>
             <ul class="hot_word">
                 <li><a href="#">模特</a></li>
@@ -60,19 +61,15 @@
                 <ol class="carousel-indicators">
                     <li data-target="#news-top-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#news-top-carousel" data-slide-to="1"></li>
-                    <li data-target="#news-top-carousel" data-slide-to="2"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <a href="news-content.html"><img src="images/组-5-45.png" alt="img"></a>
+                        <a href="news-content.html"><img src="images/组-5.jpg" alt="img"></a>
                     </div>
                     <div class="item">
-                        <img src="images/矩形-1-拷贝.jpg" alt="img">
-                    </div>
-                    <div class="item">
-                        <img src="images/矩形-1-拷贝.jpg" alt="img">
+                        <a href="news-content-3.html"><img src="images/dsgba.jpg" alt="img"></a>
                     </div>
                 </div>
                 <!-- Controls -->
@@ -87,34 +84,29 @@
             </div>
             <div class="news-index-list">
                 <div class="news-index-item clearfix">
-                    <img src="images/未标题-27_05.jpg" alt="img">
-                    <p class="news-red-title">王栎鑫今日娶圈外女友：相恋多年非粉丝 女方私房照曝光（图）</p>
-                    <p class="news-sm-title">[王栎鑫结婚俞灏明心碎 网友调侃：去抢婚 三亚结婚？经纪人：他发微博说]</p>
-                    <p class="news-sm-title">[《完美邂逅》王栎鑫亲吻女嘉宾 疑露真情 网曝三亚婚礼答谢宴现场（组图）]</p>
+                    <img src="images/001.jpg" alt="img">
+                    <p class="news-red-title"><a href="news-content-1.html">杨洋负面新闻缠身 公司发声明：追查到底，绝不姑息（图）</a></p>
+                    <p class="news-sm-title">人气正当红的杨洋最近负面传闻缠身，先是某博主发布一条微博指责...</p>
+                </div>
+               <div class="news-index-item clearfix">
+                    <img src="images/002.jpg" alt="img">
+                   <p class="news-red-title"><a href="news-content-2.html">马思纯：变得更好更强大真的要靠瘦（图）</a></p>
+                    <p class="news-sm-title">在获得“金马影后”的舞台上，马思纯高兴得又哭又笑。这个被家庭保护得很好的女孩有一个著名的小姨蒋雯丽...</p>
                 </div>
                 <div class="news-index-item clearfix">
-                    <img src="images/未标题-27_11.jpg" alt="img">
-                    <p class="news-red-title">王栎鑫今日娶圈外女友：相恋多年非粉丝 女方私房照曝光（图）</p>
-                    <p class="news-sm-title">[王栎鑫结婚俞灏明心碎 网友调侃：去抢婚 三亚结婚？经纪人：他发微博说]</p>
-                    <p class="news-sm-title">[《完美邂逅》王栎鑫亲吻女嘉宾 疑露真情 网曝三亚婚礼答谢宴现场（组图）]</p>
+                    <img src="images/004.jpg" alt="img">
+                    <p class="news-red-title"><a href="news-content-3.html">"小丑"宋小宝的中场休息：我懂薛之谦那份心（图）</a></p>
+                    <p class="news-sm-title">出现在酒店房间的宋小宝是个普通人。他身穿黑T恤牛仔裤，神色平静，带点疲惫，说到感恩之类的话题习惯性要双手合十。除了矮一点...</p>
                 </div>
                 <div class="news-index-item clearfix">
-                    <img src="images/未标题-27_17.jpg" alt="img">
-                    <p class="news-red-title">王栎鑫今日娶圈外女友：相恋多年非粉丝 女方私房照曝光（图）</p>
-                    <p class="news-sm-title">[王栎鑫结婚俞灏明心碎 网友调侃：去抢婚 三亚结婚？经纪人：他发微博说]</p>
-                    <p class="news-sm-title">[《完美邂逅》王栎鑫亲吻女嘉宾 疑露真情 网曝三亚婚礼答谢宴现场（组图）]</p>
+                    <img src="images/003.jpg" alt="img">
+                    <p class="news-red-title"><a href="news-content.html">唐嫣去韩国做了个空气刘海 一脸甜笑（图）</a></p>
+                    <p class="news-sm-title">唐嫣自从与罗晋公开恋情后，每次亮相都是满脸甜蜜。近日，有网友爆料唐嫣去韩国做了个新发型，并晒出多张她现身机场的照片。</p>
                 </div>
                 <div class="news-index-item clearfix">
-                    <img src="images/未标题-27_23.jpg" alt="img">
-                    <p class="news-red-title">王栎鑫今日娶圈外女友：相恋多年非粉丝 女方私房照曝光（图）</p>
-                    <p class="news-sm-title">[王栎鑫结婚俞灏明心碎 网友调侃：去抢婚 三亚结婚？经纪人：他发微博说]</p>
-                    <p class="news-sm-title">[《完美邂逅》王栎鑫亲吻女嘉宾 疑露真情 网曝三亚婚礼答谢宴现场（组图）]</p>
-                </div>
-                <div class="news-index-item clearfix">
-                    <img src="images/未标题-27_29.jpg" alt="img">
-                    <p class="news-red-title">王栎鑫今日娶圈外女友：相恋多年非粉丝 女方私房照曝光（图）</p>
-                    <p class="news-sm-title">[王栎鑫结婚俞灏明心碎 网友调侃：去抢婚 三亚结婚？经纪人：他发微博说]</p>
-                    <p class="news-sm-title">[《完美邂逅》王栎鑫亲吻女嘉宾 疑露真情 网曝三亚婚礼答谢宴现场（组图）]</p>
+                    <img src="images/005.jpg" alt="img">
+                    <p class="news-red-title"><a href="news-content.html">配音大师向隽殊逝世 曾是中国电影译制事业奠基人（图）</a></p>
+                    <p class="news-sm-title">电影配音大师向隽殊12月12日晚17时在家中辞世，享年91岁。她曾配音过《山上的来客》《流浪者》《卖花姑娘》《静静的顿河》等经...</p>
                 </div>
             </div>
             <div class="news-hot-1">
@@ -176,20 +168,20 @@
                 </div>
                 <div class="news-weibo-switch-box clearfix">
                     <section>
-                        <img src="images/qwrer-1_06.jpg" alt="img">
-                        <p>邓超逗逼九连拍</p>
+                       <a href="news-content-3.html"> <img src="images/qwrer-1_06.jpg" alt="img">
+                        <p>邓超逗逼九连拍</p></a>
                     </section>
                     <section>
-                        <img src="images/qwrer-1_08.jpg" alt="img">
-                        <p>Kimi海边抓螃蟹变勇敢</p>
+                        <a href="news-content-3.html"><img src="images/qwrer-1_08.jpg" alt="img">
+                        <p>Kimi海边抓螃蟹变勇敢</p></a>
                     </section>
                     <section>
-                        <img src="images/qwrer-1_14.jpg" alt="img">
-                        <p>范范黑人首次亲自喂奶</p>
+                        <a href="news-content-2.html"><img src="images/qwrer-1_14.jpg" alt="img">
+                        <p>范范黑人首次亲自喂奶</p></a>
                     </section>
                     <section>
-                        <img src="images/qwrer-1_16.jpg" alt="img">
-                        <p>森迭教爸爸弹钢琴</p>
+                        <a href="news-content-1.html"><img src="images/qwrer-1_16.jpg" alt="img">
+                        <p>森迭教爸爸弹钢琴</p></a>
                     </section>
                 </div>
                 <ul class="news-weibo-list">
@@ -213,30 +205,30 @@
                 <p class="news-gossip-top10-title">八卦 TOP10<span>更多</span></p>
                 <div  id="news-gossip-scroll">
                     <ul class="news-gossip-list">
-                        <li><a>新浪娱乐官方微博</a> <a>娱乐名人风云榜</a></li>
+                        <li><a>金星和汉斯离婚的原因却感动了无数人</a></li>
+                        <li><a>杨幂承认离婚? 小糯米的抚养权只能到5岁</a></li>
+                        <li><a>古丽娜扎学生时期居然会这样？和郑爽差距大，辣眼睛！</a></li>
+                        <li><a>同样都是女主角 杨洋的对待差别太大了</a></li>
+                        <li><a>娜扎郑爽机场再相遇，街拍形成鲜明对比</a></li>
                         <li><a>苏苏佩戴小国旗</a> <a>微盘air震撼发布</a></li>
-                        <li><a>新浪娱乐官方微博</a> <a>娱乐名人风云榜</a></li>
-                        <li><a>苏苏佩戴小国旗</a> <a>微盘air震撼发布</a></li>
-                        <li><a>新浪娱乐官方微博</a> <a>娱乐名人风云榜</a></li>
-                        <li><a>苏苏佩戴小国旗</a> <a>微盘air震撼发布</a></li>
-                        <li><a>新浪娱乐官方微博</a> <a>娱乐名人风云榜</a></li>
-                        <li><a>苏苏佩戴小国旗</a> <a>微盘air震撼发布</a></li>
-                        <li><a>新浪娱乐官方微博</a> <a>娱乐名人风云榜</a></li>
-                        <li><a>苏苏佩戴小国旗</a> <a>微盘air震撼发布</a></li>
-                        <li><a>新浪娱乐官方微博</a> <a>娱乐名人风云榜</a></li>
-                        <li><a>苏苏佩戴小国旗</a> <a>微盘air震撼发布</a></li>
-                        <li><a>新浪娱乐官方微博</a> <a>娱乐名人风云榜</a></li>
-                        <li><a>苏苏佩戴小国旗</a> <a>微盘air震撼发布</a></li>
-                        <li><a>新浪娱乐官方微博</a> <a>娱乐名人风云榜</a></li>
-                        <li><a>苏苏佩戴小国旗</a> <a>微盘air震撼发布</a></li>
-                        <li><a>新浪娱乐官方微博</a> <a>娱乐名人风云榜</a></li>
-                        <li><a>苏苏佩戴小国旗</a> <a>微盘air震撼发布</a></li>
-                        <li><a>新浪娱乐官方微博</a> <a>娱乐名人风云榜</a></li>
-                        <li><a>苏苏佩戴小国旗</a> <a>微盘air震撼发布</a></li>
-                        <li><a>新浪娱乐官方微博</a> <a>娱乐名人风云榜</a></li>
-                        <li><a>苏苏佩戴小国旗</a> <a>微盘air震撼发布</a></li>
-                        <li><a>新浪娱乐官方微博</a> <a>娱乐名人风云榜</a></li>
-                        <li><a>苏苏佩戴小国旗</a> <a>微盘air震撼发布</a></li>
+                        <li><a>张歆艺炮轰医院事件反转 遭医生指态度恶劣</a></li>
+                        <li><a>潘长江：不上春晚像鸡憋着不下蛋，肯定搭蔡明</a></li>
+                        <li><a>《鬼吹灯》最新预告曝光 把故事全回忆起来了！</a></li>
+                        <li><a>唐嫣称自己现在很幸福 罗晋已获准岳父母肯定</a></li>
+                        <li><a>《美人私房菜》遭紧急撤档 疑因未购买假收视</a></li>
+                        <li><a>六年恋情终盖章？张若昀探班唐艺昕为其甜蜜庆生</a></li>
+                        <li><a>王菲：第一次，拍杂志封面，“既几”拍“既几”</a></li>
+                        <li><a>嫁给爱情的陈妍希，与陈晓做饼干好甜蜜</a></li>
+                        <li><a>演员白静被杀案中案终审宣判 “小三”乔宇获刑11年</a></li>
+                        <li><a>手滑？网友吐槽张歆艺无知 Angelababy点赞</a></li>
+                        <li><a>星二代初长成，不仅颜值高身材还超辣</a></li>
+                        <li><a>《我是歌手》正式更名为《歌手》 换档周六</a></li>
+                        <li><a>李连杰衰老似70岁？友人：他好着呢，只是不太讲究</a></li>
+                        <li><a>专访王俊凯：演完《长城》觉得自己太伟大了</a></li>
+                        <li><a>阿娇美回来了！大露背好性感</a></li>
+                        <li><a>吴京“机场瘫” 坐经济舱没明星光环获好评</a></li>
+                        <li><a>《教父》：欲哭无泪，卸下伪装的老教父</a></li>
+                        <li><a>《春风十里》冬日探班 周冬雨张一山相爱相杀</a></li>
                     </ul>
                 </div>
             </div>
@@ -292,7 +284,7 @@
                 <li><a href="#">诚聘英才</a></li>
                 <li><a href="#">友情链接</a></li>
             </ul>
-            <p>版权所有  广西群星艺术设计有限公司</p>
+            <p>版权所有  广西群星艺术设计有限公司 <a href="http://www.miibeian.gov.cn/" style="color:inherit;">桂ICP备15000036号-4</a></p>
             <p>公司地址：广西南宁青秀区民主路13号歌舞剧院6栋二单元205室</p>
             <p>全国热线：<span>0771-5604240</span></p>
         </div>
