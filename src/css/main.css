@@ -556,6 +556,7 @@ h3.h3-title::before {
   vertical-align: middle;
 }
 .src-name .work-order-btn {
+  background: -webkit-linear-gradient(#FAC673, #EA5C8A);
   background: linear-gradient(#FAC673, #EA5C8A);
   border-radius: 7px;
   border: none;
@@ -809,7 +810,8 @@ h3.h3-title::before {
   position: absolute;
   left: 10px;
   top: 50%;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 .ticket-menu-right {
   width: 775px;
@@ -830,6 +832,7 @@ h3.h3-title::before {
 }
 .nav-choose-city {
   color: white;
+  background: -webkit-linear-gradient(#f9c678, #ea5a8e);
   background: linear-gradient(#f9c678, #ea5a8e);
   border-radius: 5px;
 }
@@ -1058,16 +1061,30 @@ h3.h3-title::before {
 }
 .ticket-hot-shows .hot-shows-box {
   height: 315px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .ticket-hot-shows .hot-shows-box img {
-  flex-grow: 1;
-  flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   padding: 0 5px 5px 0;
 }
 .factory-top-area {
@@ -1250,6 +1267,9 @@ h3.h3-title::before {
   /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
   white-space: nowrap;
   /* 不换行 */
+}
+.factory-class-area .factory-class-box .factory-project-card .factory-project-card-title:hover {
+  text-decoration: underline;
 }
 .factory-class-area .factory-class-box .factory-project-card .factory-project-card-progress {
   margin: 15px 5px;
@@ -1730,10 +1750,12 @@ h3.h3-title::before {
   z-index: 10;
 }
 .news-content-main .news-pic-nav .news-pic-nav-scroll button.btn-scroll-left {
+  background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
   background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
   left: -10px;
 }
 .news-content-main .news-pic-nav .news-pic-nav-scroll button.btn-scroll-right {
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
   right: -10px;
 }
@@ -1827,7 +1849,8 @@ h3.h3-title::before {
   bottom: 5px;
   border-left: 2px solid white;
   border-bottom: 2px solid white;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .news-content-main .follow-member-bar .follow-member-card p {
   text-align: center;
@@ -1970,6 +1993,7 @@ h3.h3-title::before {
   display: inline-block;
   width: 8px;
   height: 1em;
+  background: -webkit-linear-gradient(top, #f9c678, #ea5a8e);
   background: linear-gradient(to bottom, #f9c678, #ea5a8e);
   border-radius: 8px;
   vertical-align: bottom;
@@ -2048,6 +2072,7 @@ h3.h3-title::before {
   display: inline-block;
   width: 8px;
   height: 1em;
+  background: -webkit-linear-gradient(top, #f9c678, #ea5a8e);
   background: linear-gradient(to bottom, #f9c678, #ea5a8e);
   border-radius: 8px;
   vertical-align: bottom;
@@ -2114,6 +2139,7 @@ h3.h3-title::before {
   display: inline-block;
   width: 8px;
   height: 1em;
+  background: -webkit-linear-gradient(top, #f9c678, #ea5a8e);
   background: linear-gradient(to bottom, #f9c678, #ea5a8e);
   border-radius: 8px;
   vertical-align: bottom;
@@ -2211,7 +2237,16 @@ h3.h3-title::before {
   position: relative;
   top: 2px;
   left: 2px;
-  animation: click 0.5s infinite alternate;
+  -webkit-animation: click 0.5s infinite alternate;
+          animation: click 0.5s infinite alternate;
+}
+@-webkit-keyframes click {
+  from {
+    top: 5px;
+  }
+  to {
+    top: 0;
+  }
 }
 @keyframes click {
   from {
@@ -2244,7 +2279,8 @@ h3.h3-title::before {
   top: 50px;
   font-size: 60px;
   color: white;
-  transform: rotate(-40deg);
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
 }
 .resource-rank-main .src-rank-new {
   border-top: 2px solid #ec6f3a;
@@ -2342,6 +2378,7 @@ h3.h3-title::before {
   vertical-align: text-top;
 }
 .factory-need-list-main .factory-need-list-left .search-choose-area button.selected {
+  background: -webkit-linear-gradient(#ffbc6d, #ec6f3a);
   background: linear-gradient(#ffbc6d, #ec6f3a);
   border-color: #ec6941;
 }
@@ -2512,6 +2549,7 @@ h3.h3-title::before {
   vertical-align: text-top;
 }
 .ticket-list-main .search-choose-area button.selected {
+  background: -webkit-linear-gradient(#ffbc6d, #ec6f3a);
   background: linear-gradient(#ffbc6d, #ec6f3a);
   border-color: #ec6941;
 }
@@ -2605,6 +2643,7 @@ h3.h3-title::before {
   margin-top: 10px;
   width: 100%;
   height: 2px;
+  background: -webkit-linear-gradient(left, mediumvioletred 30%, #ccc 0);
   background: linear-gradient(to right, mediumvioletred 30%, #ccc 0);
 }
 .ticket-list-main .ticket-list-right .ticket-list-right-item img.img-cover {
@@ -3260,7 +3299,8 @@ h3.h3-title::before {
   top: 6px;
   width: 10px;
   height: 10px;
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   border-radius: 50%;
   border: 1px solid #e95689;
   background: white;
@@ -3276,7 +3316,8 @@ h3.h3-title::before {
   bottom: -3px;
   left: 1px;
   z-index: 10;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .ticket-content-main .ticket-content-top .ticket-buy .ticket-buy-table {
   margin: 20px 0;
@@ -3489,52 +3530,56 @@ h3.h3-title::before {
 .ticket-select-main > div div.seat-info p:nth-of-type(6) span {
   background: green;
 }
-.ticket-select-main > div a.area-1 {
+.ticket-select-main > div .area-1 {
   display: block;
   position: absolute;
   width: 75px;
   height: 65px;
   background: transparent;
+  background-image: url("data:image/gif; base64,AAAA");
   top: 210px;
   left: 470px;
 }
-.ticket-select-main > div a.area-1:hover {
+.ticket-select-main > div .area-1:hover {
   background: rgba(0, 0, 0, 0.3);
 }
-.ticket-select-main > div a.area-2 {
+.ticket-select-main > div .area-2 {
   display: block;
   position: absolute;
   width: 75px;
   height: 65px;
   background: transparent;
+  background-image: url("data:image/gif; base64,AAAA");
   top: 210px;
   left: 555px;
 }
-.ticket-select-main > div a.area-2:hover {
+.ticket-select-main > div .area-2:hover {
   background: rgba(0, 0, 0, 0.3);
 }
-.ticket-select-main > div a.area-3 {
+.ticket-select-main > div .area-3 {
   display: block;
   position: absolute;
   width: 75px;
   height: 65px;
   background: transparent;
+  background-image: url("data:image/gif; base64,AAAA");
   top: 285px;
   left: 470px;
 }
-.ticket-select-main > div a.area-3:hover {
+.ticket-select-main > div .area-3:hover {
   background: rgba(0, 0, 0, 0.3);
 }
-.ticket-select-main > div a.area-4 {
+.ticket-select-main > div .area-4 {
   display: block;
   position: absolute;
   width: 75px;
   height: 65px;
   background: transparent;
+  background-image: url("data:image/gif; base64,AAAA");
   top: 285px;
   left: 555px;
 }
-.ticket-select-main > div a.area-4:hover {
+.ticket-select-main > div .area-4:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 .ticket-select-main > div .seat-map {
@@ -3641,13 +3686,18 @@ h3.h3-title::before {
   width: 100%;
   height: 2px;
   margin: 10px 0;
+  background-image: -webkit-linear-gradient(left, #e95589 150px, #ccc 150px);
   background-image: linear-gradient(to right, #e95589 150px, #ccc 150px);
   background-color: #cccccc;
 }
 .ticket-select-main .pay-order .select-express-kinds {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 20px 50px;
 }
 .ticket-select-main .pay-order .select-express-kinds .express:hover > div,
@@ -3707,7 +3757,8 @@ h3.h3-title::before {
   border-right: none;
   border-bottom: none;
   background: white;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   position: absolute;
   top: -11px;
   left: 175px;
@@ -3724,7 +3775,8 @@ h3.h3-title::before {
   border-right: none;
   border-bottom: none;
   background: white;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   position: absolute;
   top: -11px;
   left: 470px;
@@ -3741,7 +3793,8 @@ h3.h3-title::before {
   border-right: none;
   border-bottom: none;
   background: white;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   position: absolute;
   top: -11px;
   left: 755px;

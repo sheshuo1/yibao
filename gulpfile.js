@@ -22,7 +22,7 @@ var cssSrc = 'src/css/*.css',
     jsDest = 'dist/js',
     fontSrc = 'src/fonts/*',
     fontDest = 'dist/fonts',
-    imgSrc = 'src/images/*.{png,jpg,gif}',
+    imgSrc = 'src/images/src/*.{png,jpg,gif}',
     imgDest = 'dist/images',
     cssRevSrc = 'src/css/revCss';
 
@@ -54,8 +54,8 @@ gulp.task('autofx', function () {
             cascade: true, //是否美化属性值 默认：true 像这样：
             remove:true //是否去掉不必要的前缀 默认：true 
         }))
-        .pipe(rename({ suffix: '.fx' }))
-        .pipe(gulp.dest(cssSrc));
+        // .pipe(rename({ suffix: '.fx' }))
+        .pipe(gulp.dest('src/css'));
 });
 
 //自动编译less文件
@@ -73,7 +73,7 @@ gulp.task('imagemin', function() {
             progressive: true,
             use: [pngquant()] //使用pngquant深度压缩png图片的imagemin插件
         }))
-        .pipe(gulp.dest('src/images/min'));
+        .pipe(gulp.dest('src/images/min/src'));
 });
 
 //压缩js文件
@@ -97,7 +97,7 @@ gulp.task('revCollectorCss', function () {
 
 //压缩css文件
 gulp.task('mincss',function() {
-    return gulp.src(cssRevSrc)
+    return gulp.src(cssSrc)
         .pipe(autoprefixer({
             browsers: ['last 2 versions', 'Android >= 4.0','> 5%'],
             cascade: true, //是否美化属性值 默认：true 像这样：
@@ -105,10 +105,10 @@ gulp.task('mincss',function() {
         }))
         .pipe(minifyCSS({compatibility: 'ie8'}))
         //.pipe(rename({ suffix: '.min' }))
-        .pipe(rev())
+        // .pipe(rev())
         .pipe(gulp.dest(cssDest))
-        .pipe(rev.manifest())
-        .pipe(gulp.dest('src/rev/css'));
+        // .pipe(rev.manifest())
+        // .pipe(gulp.dest('src/rev/css'));
 });
 
 //压缩Html/更新引入文件版本

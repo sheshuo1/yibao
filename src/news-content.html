@@ -22,7 +22,7 @@
     </div>
     <div class="box logo-search">
         <div class="logo-top">
-            <a href="nav.html"><img src="images/logo.png" class="left" alt="logo"></a>
+            <a href="index.html"><img src="images/logo.png" class="left" alt="logo"></a>
             <p><span class="select-city text-left">南宁</span><br><button>推荐进入南宁站</button></p>
         </div>
         <div class="searchline" role="search">
@@ -105,12 +105,19 @@
                 <span class="sr-only">Next</span>
             </button>
             <div class="news-pic-nav-border">
-                <div class="news-pic-nav-box">
+                <!--<div class="news-pic-nav-box">
                     <a href="javascript:$('#news-main-carousel').carousel(0);"><img src="images/组-5.png" alt=""></a>
                     <a href="javascript:$('#news-main-carousel').carousel(1);"><img src="images/组-5-拷贝-4.png" alt=""></a>
                     <a href="javascript:$('#news-main-carousel').carousel(2);"><img src="images/组-5-拷贝-3.png" alt=""></a>
                     <a href="javascript:$('#news-main-carousel').carousel(3);"><img src="images/组-5-拷贝-2.png" alt=""></a>
                     <a href="javascript:$('#news-main-carousel').carousel(4);"><img src="images/组-5-拷贝.png" alt=""></a>
+                </div>-->
+                <div class="news-pic-nav-box">
+                    <a href="javascript:;" onclick="$('#news-main-carousel').carousel(0);"><img src="images/组-5.png" alt=""></a>
+                    <a href="javascript:;" onclick="$('#news-main-carousel').carousel(1);"><img src="images/组-5-拷贝-4.png" alt=""></a>
+                    <a href="javascript:;" onclick="$('#news-main-carousel').carousel(2);"><img src="images/组-5-拷贝-3.png" alt=""></a>
+                    <a href="javascript:;" onclick="$('#news-main-carousel').carousel(3);"><img src="images/组-5-拷贝-2.png" alt=""></a>
+                    <a href="javascript:;" onclick="$('#news-main-carousel').carousel(4);"><img src="images/组-5-拷贝.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -220,11 +227,9 @@
             switch (keyCode) {
                 case 37:
                     $caroousel.carousel('prev');
-                    console.log('1');
                     break;
                 case 39:
                     $caroousel.carousel('next');
-                    console.log('2');
                     break;
                 default:
                     break;
