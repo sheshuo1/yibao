@@ -43,7 +43,7 @@ gulp.task('watch', function() {
 //监听文件变动
 gulp.task('watch-less', function() {
     livereload.listen();
-    gulp.watch('**/*.*', ['less','reload']);
+    gulp.watch('**/*.*', ['less']);
 });
 
 //自动添加css前缀
@@ -62,8 +62,7 @@ gulp.task('autofx', function () {
 gulp.task('less',function(){
     gulp.src('src/css/*.less')
         .pipe(less())
-        .pipe(gulp.dest('src/css'))
-        .pipe(livereload());
+        .pipe(gulp.dest('src/css'));
 });
 
 //压缩图片
@@ -106,7 +105,7 @@ gulp.task('mincss',function() {
         .pipe(minifyCSS({compatibility: 'ie8'}))
         //.pipe(rename({ suffix: '.min' }))
         // .pipe(rev())
-        .pipe(gulp.dest(cssDest))
+        .pipe(gulp.dest(cssDest));
         // .pipe(rev.manifest())
         // .pipe(gulp.dest('src/rev/css'));
 });

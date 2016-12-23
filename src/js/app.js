@@ -97,3 +97,9 @@ app.scrollTo=function (query) {
         window.scrollBy(0,scroll/20);
     },1000/60);
 };
+
+app.getQueryString=function (name){
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r!=null)return  unescape(r[2]); return null;
+};
