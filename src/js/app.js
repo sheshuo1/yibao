@@ -15,8 +15,6 @@ app.scrollTextUp = function (target, config) {
     var scroll_height = item_height * setting.number;
     var sum_height = item_height * item_number;
     var contair_height = $target.height();
-    // console.log(item_number+'+'+item_height+'+'+scroll_height+'+'+contair_height)
-
     setInterval(function () {
         var now_top = parseInt($scroll.css('top'));
         var now_bottom = -(sum_height - contair_height);
@@ -33,7 +31,6 @@ app.clickScroll=function ($dom,number) {
     var div_length=$dom.parent().width();
     var dom_left=parseInt($dom.css('left'));
     var max_left=length-div_length;
-    // console.log('length:'+length+'|div_length:'+div_length+'|dom_left:'+dom_left+'|max_left:'+max_left);
     if(number<0){
         if(-dom_left<max_left){
             $dom.animate({'left':(dom_left+number)+'px'},300);

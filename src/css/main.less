@@ -26,6 +26,29 @@ a:hover{
   text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
   white-space:nowrap;/* 不换行 */
 }
+nav.pages{
+  a{
+    color:#e95589;
+    &:hover{
+      color:#e95589;
+    }
+  }
+  .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    background-color:#e95589;
+    border-color: #e95589;
+  }
+  ul{
+    line-height: 46px;
+    font-size: 16px;
+    input{
+      height: 25px;
+      width: 3em;
+      vertical-align: middle;
+      line-height: 0;
+      text-align: center;
+    }
+  }
+}
 span.vip-logo:before{
   content: "";
   display: inline-block;
@@ -46,7 +69,7 @@ span.phone-logo:before{
   background: url("../images/phone-logo.png") no-repeat center;
   background-size: auto 100%;
 }
-span.glyphicon{
+span.glyphicon.glyphicon-chevron-left,span.glyphicon.glyphicon-chevron-right{
   color:#333;
 }
 #carousel-banner span.glyphicon{
@@ -3959,6 +3982,49 @@ footer{
             margin:0 10px;
           }
         }
+      }
+    }
+  }
+}
+
+//news-list.html
+.news-list-main{
+  .news-main-area;
+  .search-line{
+    font-size: 18px;
+    line-height: 2.5;
+    background: #eee;
+    padding-left: 2em;
+    b,a.active{
+      color:#e33d45;
+      font-weight: 500;
+    }
+    span{
+      float: right;
+      padding-right: 2em;
+    }
+  }
+  section.news-list-item{
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    h1{
+      font-size: 20px;
+      color:#e33d45;
+      margin-top: 0;
+    }
+    div{
+      height: 6em;
+      overflow: hidden;
+      line-height: 1.5;
+      img{
+        float: left;
+        margin-right: 1em;
+      }
+      p.news-orgin{
+        position: absolute;
+        bottom:0;
+        right: 0;
       }
     }
   }

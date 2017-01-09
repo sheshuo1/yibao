@@ -42,8 +42,7 @@ gulp.task('watch', function() {
 
 //监听文件变动
 gulp.task('watch-less', function() {
-    livereload.listen();
-    gulp.watch('**/*.*', ['less']);
+    gulp.watch('src/css/*.less', ['less']);
 });
 
 //自动添加css前缀

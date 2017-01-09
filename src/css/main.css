@@ -28,6 +28,32 @@ a:hover {
   white-space: nowrap;
   /* 不换行 */
 }
+nav.pages a {
+  color: #e95589;
+}
+nav.pages a:hover {
+  color: #e95589;
+}
+nav.pages .pagination > .active > a,
+nav.pages .pagination > .active > a:focus,
+nav.pages .pagination > .active > a:hover,
+nav.pages .pagination > .active > span,
+nav.pages .pagination > .active > span:focus,
+nav.pages .pagination > .active > span:hover {
+  background-color: #e95589;
+  border-color: #e95589;
+}
+nav.pages ul {
+  line-height: 46px;
+  font-size: 16px;
+}
+nav.pages ul input {
+  height: 25px;
+  width: 3em;
+  vertical-align: middle;
+  line-height: 0;
+  text-align: center;
+}
 span.vip-logo:before {
   content: "";
   display: inline-block;
@@ -48,7 +74,8 @@ span.phone-logo:before {
   background: url("../images/phone-logo.png") no-repeat center;
   background-size: auto 100%;
 }
-span.glyphicon {
+span.glyphicon.glyphicon-chevron-left,
+span.glyphicon.glyphicon-chevron-right {
   color: #333;
 }
 #carousel-banner span.glyphicon {
@@ -4210,4 +4237,313 @@ footer p {
   content: "|";
   display: inline-block;
   margin: 0 10px;
+}
+.news-list-main .row {
+  margin: 30px -30px;
+}
+.news-list-main .row .news-left-area {
+  border-right: 1px solid #ccc;
+}
+.news-list-main .row .news-left-area #news-top-carousel img {
+  width: 100%;
+}
+.news-list-main .row .news-left-area .news-index-item {
+  height: 86px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+.news-list-main .row .news-left-area .news-index-item img {
+  width: 128px;
+  height: 86px;
+  margin-right: 10px;
+  float: left;
+}
+.news-list-main .row .news-left-area .news-index-item p {
+  padding-left: 10px;
+  margin: 0;
+  color: #888;
+}
+.news-list-main .row .news-left-area .news-index-item p.news-red-title {
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+  /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space: nowrap;
+  /* 不换行 */
+  margin-bottom: 18px;
+  color: #aa0000;
+  font-size: 22px;
+}
+.news-list-main .row .news-left-area .news-hot-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.news-list-main .row .news-left-area .news-hot-1 img {
+  float: left;
+  padding-right: 10px;
+}
+.news-list-main .row .news-left-area .news-hot-1 .news-hot-tag {
+  padding: 10px 0;
+  border-bottom: solid 1px #ccc;
+}
+.news-list-main .row .news-left-area .news-hot-1 .news-hot-tag span {
+  float: right;
+}
+.news-list-main .row .news-left-area .news-hot-2 .news-hot-info {
+  position: relative;
+}
+.news-list-main .row .news-left-area .news-hot-2 .news-hot-info > img {
+  float: left;
+  margin-right: 5px;
+}
+.news-list-main .row .news-left-area .news-hot-2 .news-hot-info .news-inline-list {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.news-list-main .row .news-left-area .news-hot-2 .news-hot-info .news-inline-list section {
+  display: inline-block;
+}
+.news-list-main .row .news-left-area .news-hot-2 .news-hot-info .news-inline-list section p {
+  margin-bottom: 0;
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+  /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space: nowrap;
+  /* 不换行 */
+}
+.news-list-main .row .news-left-area .news-hot-2 .news-hot-tag {
+  padding: 10px 0;
+  border-bottom: solid 1px #ccc;
+}
+.news-list-main .row .news-left-area .news-hot-2 .news-hot-tag span {
+  float: right;
+}
+.news-list-main .row .news-left-area .news-hot-3 .news-inline-list section {
+  display: inline-block;
+  width: 33.33%;
+  margin: 0 -4px;
+  padding: 0 5px;
+}
+.news-list-main .row .news-left-area .news-hot-3 .news-inline-list section img {
+  width: 100%;
+}
+.news-list-main .row .news-left-area .news-hot-3 .news-inline-list section p {
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+  /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space: nowrap;
+  /* 不换行 */
+  text-align: center;
+}
+.news-list-main .row .news-left-area .news-hot-3 .news-hot-tag {
+  padding: 10px 0;
+  border-bottom: solid 1px #ccc;
+}
+.news-list-main .row .news-left-area .news-hot-3 .news-hot-tag span {
+  float: right;
+}
+.news-list-main .row .news-right-area .news-switch-btn button {
+  width: 47%;
+  background: #fef9ed;
+  line-height: 2;
+  font-size: 16px;
+  border: 1px solid #be0900;
+  float: left;
+}
+.news-list-main .row .news-right-area .news-switch-btn button:nth-of-type(2) {
+  float: right;
+}
+.news-list-main .row .news-right-area .news-switch-btn button.btn-active {
+  position: relative;
+  color: white;
+  background: #be0900;
+}
+.news-list-main .row .news-right-area .news-switch-btn button.btn-active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 43%;
+  border-top: 10px solid #be0900;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.news-list-main .row .news-right-area .news-weibo-switch-box {
+  margin: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+.news-list-main .row .news-right-area .news-weibo-switch-box section {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.news-list-main .row .news-right-area .news-weibo-switch-box section p {
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+  /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space: nowrap;
+  /* 不换行 */
+}
+.news-list-main .row .news-right-area .news-weibo-list {
+  padding-left: 10px;
+  list-style: none;
+}
+.news-list-main .row .news-right-area .news-weibo-list li {
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+  /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space: nowrap;
+  /* 不换行 */
+  line-height: 2;
+  color: red;
+}
+.news-list-main .row .news-right-area .news-weibo-list li:before {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  width: 0.5em;
+  background: red;
+  border-radius: 2em;
+  margin-right: 0.5em;
+}
+.news-list-main .row .news-right-area .news-solo-box {
+  margin: 15px 0;
+  padding: 15px 0;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+.news-list-main .row .news-right-area .news-solo-box .news-solo-title {
+  font-size: 20px;
+  color: #be0900;
+}
+.news-list-main .row .news-right-area .news-solo-box .news-solo-title span {
+  font-size: 14px;
+  color: black;
+  float: right;
+}
+.news-list-main .row .news-right-area .news-solo-box .news-solo-list p {
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+  /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space: nowrap;
+  /* 不换行 */
+  padding-left: 5px;
+  line-height: 2.5;
+  background: #eee;
+  margin-bottom: 5px;
+}
+.news-list-main .row .news-right-area .news-solo-box .news-solo-list img {
+  width: 100%;
+}
+.news-list-main .row .news-right-area .news-gossip-top10 {
+  position: relative;
+}
+.news-list-main .row .news-right-area .news-gossip-top10 #news-gossip-scroll {
+  position: relative;
+  height: 336px;
+  overflow: hidden;
+}
+.news-list-main .row .news-right-area .news-gossip-top10 .news-gossip-top10-title {
+  font-size: 20px;
+  color: #be0900;
+}
+.news-list-main .row .news-right-area .news-gossip-top10 .news-gossip-top10-title span {
+  font-size: 14px;
+  color: black;
+  float: right;
+}
+.news-list-main .row .news-right-area .news-gossip-top10 .news-gossip-list {
+  position: relative;
+  padding-left: 10px;
+  list-style: none;
+}
+.news-list-main .row .news-right-area .news-gossip-top10 .news-gossip-list li {
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+  /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space: nowrap;
+  /* 不换行 */
+  line-height: 2;
+  color: black;
+}
+.news-list-main .row .news-right-area .news-gossip-top10 .news-gossip-list li:before {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  width: 0.5em;
+  background: red;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+.news-list-main .row .news-right-area .news-movies-box .news-movies-bar {
+  margin: 15px 0;
+}
+.news-list-main .row .news-right-area .news-movies-box .news-movies-bar .btn-hot-movie {
+  float: left;
+  margin-right: 10px;
+  background-color: #be0900;
+  border-color: #be0900;
+}
+.news-list-main .row .news-right-area .news-movies-box .news-movies-bar .dropdown {
+  float: left;
+}
+.news-list-main .row .news-right-area .news-movies-box .news-movie-card img {
+  float: left;
+  margin-right: 5px;
+}
+.news-list-main .row .news-right-area .news-movies-box .news-movie-card .news-movie-card-title {
+  font-size: 16px;
+}
+.news-list-main .row .news-right-area .news-movies-box .news-movie-card .news-movie-card-title > span {
+  float: right;
+}
+.news-list-main .row .news-right-area .news-movies-box .news-movie-card .news-movie-card-title > span span {
+  font-size: 24px;
+  color: red;
+}
+.news-list-main .search-line {
+  font-size: 18px;
+  line-height: 2.5;
+  background: #eee;
+  padding-left: 2em;
+}
+.news-list-main .search-line b,
+.news-list-main .search-line a.active {
+  color: #e33d45;
+  font-weight: 500;
+}
+.news-list-main .search-line span {
+  float: right;
+  padding-right: 2em;
+}
+.news-list-main section.news-list-item {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+.news-list-main section.news-list-item h1 {
+  font-size: 20px;
+  color: #e33d45;
+  margin-top: 0;
+}
+.news-list-main section.news-list-item div {
+  height: 6em;
+  overflow: hidden;
+  line-height: 1.5;
+}
+.news-list-main section.news-list-item div img {
+  float: left;
+  margin-right: 1em;
+}
+.news-list-main section.news-list-item div p.news-orgin {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
