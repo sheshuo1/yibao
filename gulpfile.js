@@ -97,7 +97,7 @@ gulp.task('revCollectorCss', function () {
 gulp.task('mincss',function() {
     return gulp.src(cssSrc)
         .pipe(autoprefixer({
-            browsers: ['last 2 versions', 'Android >= 4.0','> 5%'],
+            browsers: ['last 2 versions','ie >=9', 'Android >= 4.0','> 5%'],
             cascade: true, //是否美化属性值 默认：true 像这样：
             remove:true //是否去掉不必要的前缀 默认：true
         }))
