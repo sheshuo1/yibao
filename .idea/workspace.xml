@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e52401b9-9489-4fb0-867a-b089e44f5e3a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/factory-need-content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/main.css" afterPath="$PROJECT_DIR$/src/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/main.less" afterPath="$PROJECT_DIR$/src/css/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/factory-list.html" afterPath="$PROJECT_DIR$/src/factory-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/factory.html" afterPath="$PROJECT_DIR$/src/factory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nav.html" afterPath="$PROJECT_DIR$/src/nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource.html" afterPath="$PROJECT_DIR$/src/resource.html" />
-    </list>
+    <list default="true" id="e52401b9-9489-4fb0-867a-b089e44f5e3a" name="Default" comment="" />
     <ignored path="NewProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +19,7 @@
     <favorites_list name="NewProject" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.592883">
+    <splitter split-orientation="horizontal" split-proportion="0.67370325">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="resource.html" pinned="false" current-in-tab="false">
@@ -47,8 +37,8 @@
           <file leaf-file-name="ticket-list.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/ticket-list.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="434">
-                  <caret line="159" column="71" lean-forward="true" selection-start-line="159" selection-start-column="71" selection-end-line="159" selection-end-column="71" />
+                <state relative-caret-position="560">
+                  <caret line="165" column="37" lean-forward="true" selection-start-line="165" selection-start-column="37" selection-end-line="165" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
@@ -659,12 +649,12 @@
       <workItem from="1483946166522" duration="598000" />
       <workItem from="1484009371190" duration="607000" />
       <workItem from="1485074305013" duration="3225000" />
-      <workItem from="1485133032111" duration="7764000" />
+      <workItem from="1485133032111" duration="8691000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="441772000" />
+    <option name="totallyTimeSpent" value="442699000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1114,8 +1104,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ticket-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="159" column="71" lean-forward="true" selection-start-line="159" selection-start-column="71" selection-end-line="159" selection-end-column="71" />
+        <state relative-caret-position="560">
+          <caret line="165" column="37" lean-forward="true" selection-start-line="165" selection-start-column="37" selection-end-line="165" selection-end-column="37" />
           <folding />
         </state>
       </provider>
